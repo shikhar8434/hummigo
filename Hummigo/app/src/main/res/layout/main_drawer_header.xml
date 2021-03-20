@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
         android:scaleType="centerInside"
-        android:background="#dcd3ff"
+        android:background="#70af85"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/avatar1" />
@@ -26,6 +26,7 @@
         android:text="Saturday "
         android:textColor="#090909"
         android:textSize="24sp"
+        android:fontFamily="@font/rubikbold"
         app:layout_constraintStart_toStartOf="@+id/meditation_iv"
         app:layout_constraintTop_toBottomOf="@+id/meditation_iv" />
 
@@ -36,6 +37,7 @@
         android:layout_marginStart="4dp"
 
         android:text="8 p.m."
+        android:fontFamily="@font/rubikbold"
         android:textColor="#0C0C0C"
         android:textSize="24sp"
         app:layout_constraintStart_toEndOf="@+id/day_tv"

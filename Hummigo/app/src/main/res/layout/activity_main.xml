@@ -9,7 +9,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/mygrad">
+        android:background="#f9f3f3">
 
 
         <androidx.cardview.widget.CardView
@@ -18,7 +18,8 @@
             android:layout_height="200dp"
             android:layout_margin="32dp"
             app:cardCornerRadius="8dp"
-            app:cardElevation="12dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="#f9f3f3"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -34,6 +35,8 @@
                     android:layout_width="236dp"
                     android:layout_height="201dp"
                     android:paddingLeft="-48dp"
+                    android:background="#f9f3f3"
+
                     android:src="@drawable/avatar2"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -43,17 +46,16 @@
                     android:id="@+id/textView9"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="44dp"
                     android:fontFamily="@font/rubikbold"
-                    android:text="Good Morning"
+                    android:text="Bonjour"
                     android:textColor="@color/black"
-                    android:textSize="24dp"
+                    android:textSize="32dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.911"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-
+                    app:layout_constraintHorizontal_bias="0.767"
+                    app:layout_constraintStart_toStartOf="@+id/imageView6"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.172" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -67,78 +69,106 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="240dp"
+            app:cardBackgroundColor="#f6ecf0"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/mygrad"/>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                >
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/cardView"
+                    android:id="@+id/card1"
                     android:layout_width="160dp"
                     android:layout_height="120dp"
                     android:layout_marginStart="12dp"
                     android:layout_marginTop="100dp"
                     app:cardCornerRadius="12dp"
-                    app:cardElevation="8dp"
-                    app:cardBackgroundColor="#ffffd1"
-                    app:layout_constraintEnd_toStartOf="@+id/cardView2"
+                    app:cardElevation="4dp"
+                    app:cardBackgroundColor="#f9f3f3"
+                    app:layout_constraintEnd_toStartOf="@+id/card2"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/avatar1"/>
 
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/cardView4"
+                    android:id="@+id/card4"
                     android:layout_width="160dp"
                     android:layout_height="120dp"
                     android:layout_marginTop="12dp"
+                    app:cardBackgroundColor="#f9f3f3"
                     app:cardCornerRadius="12dp"
-                    app:cardElevation="8dp"
-                    app:cardBackgroundColor="#dcd3ff"
+                    app:cardElevation="4dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toEndOf="@+id/cardView3"
-                    app:layout_constraintTop_toBottomOf="@+id/cardView2"
-                    app:layout_constraintVertical_bias="0.0" />
+                    app:layout_constraintStart_toEndOf="@+id/card3"
+                    app:layout_constraintTop_toBottomOf="@+id/card2"
+                    app:layout_constraintVertical_bias="0.057">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/avatar1" />
+
+
+                </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/cardView3"
+                    android:id="@+id/card3"
                     android:layout_width="160dp"
                     android:layout_height="120dp"
                     android:layout_marginStart="12dp"
                     android:layout_marginTop="12dp"
                     app:cardCornerRadius="12dp"
-                    app:cardElevation="8dp"
-                    app:cardBackgroundColor="#bffcc6"
+                    app:cardElevation="4dp"
+                    app:cardBackgroundColor="#f9f3f3"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/cardView4"
+                    app:layout_constraintEnd_toStartOf="@+id/card4"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/cardView"
-                    app:layout_constraintVertical_bias="0.057" />
+                    app:layout_constraintTop_toBottomOf="@+id/card1"
+                    app:layout_constraintVertical_bias="0.057" >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/avatar1"/>
+                </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/cardView2"
+                    android:id="@+id/card2"
                     android:layout_width="160dp"
                     android:layout_height="120dp"
                     android:layout_marginTop="100dp"
                     app:cardCornerRadius="12dp"
-                    app:cardElevation="8dp"
-                    app:cardBackgroundColor="#ffcbc1"
+                    app:cardElevation="4dp"
+                    app:cardBackgroundColor="#f9f3f3"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toEndOf="@+id/cardView"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintStart_toEndOf="@+id/card1"
+                    app:layout_constraintTop_toTopOf="parent" >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/avatar1"/>
+                </androidx.cardview.widget.CardView>
             </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 
         </androidx.cardview.widget.CardView>
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

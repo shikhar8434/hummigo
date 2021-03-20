@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "small-talk-erpp",
+  "private_key_id": "97f203714c06990ba3ce5565da0a597d129c3f8d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDFbmV23vQTRYnJ\nMZjw9UArBOYr82uz0dJIzT9+vGZkl/771UYuNuG18vdERXCokndvVfk0w70CZ58C\nwrBrXSinYlI8Zs7K+PqOFRjNH0JRT8zN+FgOlQ+MBWPqx0xS/SB2thpoobPT9QhE\n5RfQfj4nhupF00yPeGaQdzH5fnUMJwirjokDKOsXFN+H5ElAdQnNfpaFLjDkNdK7\nG7E8wDEOYhXFxmcLMugSKJTyjmN+UjclNj3JMt7H07z8iLsMkU19QOSjZjCWSncq\noyORigR4w4KcCqyCvz9+H77mcIPD+xKVvoVxap6j9WDgAfpS+vgtvVzInBjj2Lw2\n3QdogQPzAgMBAAECggEAR/Yiro66WRHmFHrq+5zw3B1HhiqODbeDVbzWEWw7SBws\nuP72Ox8O6yJZpT1IQHFObjrggC5+RJOfXkK3ShLlIAmS3ug8JLhWnxYqeY2Uvw1+\noW6NLhd/2LIYRrmI5NDVld9vRcb2xGGSN4ZnRTvWjNK8rmHDjKG+hJallQJWSGyH\n1Z3s1+Dm724NIz7mvlS0KNaNgwxt2U5O0sLFfUZ3SjYENGxZqpfgeuDARJodgRQi\npqv0gCzNTaTzs+55hk56dodVB/0jQsGYZZiqP+DdYPAo+it8iFRJDGiVlf0V6VLt\nHdJB9L650gAZA3fHw77jM4voUPYL5gzMmSsTLRQjeQKBgQDpwTy6oz8svit9XK/n\nT8qnnQm+FJBWLkj9+2Du9Mxx/XZaQlRjafjwuHHGl1VqVMpAtk8wsszHlSwgkwWL\n1fhSr3irBfTK8QgxELtu5MMyAG8R6jD8cDz47p87Tsulr1AWveIbz40VF2oAxYXF\nIS3eDEa4HoM0M22RY4bcGoxFuwKBgQDYOD1HQhBZCs/3tZCUiDgdXAov5kMVUaEa\nohSIHrQInqHrs+E7tOLZBNVwU+uUfa3A2cwRyRQVygc6lCytlX7nEC+uFpXDHpeC\nUqEGKm+73WaJX0mn4vW/BvTfc5XM9MKT4ZlAj0qBjUCsT4Z8+IBq+BF4xlfVzsRK\n9eQyUot7KQKBgGKf4EKSy/3RwsGi0KjUtplfnZOwU3G5F5zpae2IJZZWrY/Jepdz\nR9Aw0fhLM4OogKkrAmB2oAX5P2QDBA0K2znvxQbLfYv+hElHWP2h0WWQX0x8texc\nYq1Y6J/6T9v5Ct59gR/gwxLKDTSEIjuZEyQjo9bdMNhednUoO+cz4EkvAoGAV16S\nVGL7nB9kXeH+JCbPFf4FF8nhvZGYmdx4k3Bkqz7+ivHKx4eWSr9LR/KBNSV7unvH\nnEA2X3+dYCxTyWipONEvkxcJOSj5a+3bp1Qqhi02q7fXWYG6b5BuDoT0OTeGEJ+O\nf6nnH2Zmhbo0y/bWXWMUHEt5XqoIY4nsxfDY79ECgYEA005URUHAbmgxA0ywD8Zf\nt5niekC/YmsnAoPkFDgIKgt6ydOKNGr8gn9NU8y/otR4tfGd6wJwcP6rPvHkOVmj\nUz68qkD9IIui2niqTM/56tm7yvkmsbvUAm9G3nBGTAqVU31R5vOr/mZDFUiZF6B5\nocxsb8wCZF2/Hjx0tLcrYDM=\n-----END PRIVATE KEY-----\n",
+  "client_email": "sparkinssmalltalk@small-talk-erpp.iam.gserviceaccount.com",
+  "client_id": "104930977943244807104",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/sparkinssmalltalk%40small-talk-erpp.iam.gserviceaccount.com"
+}
