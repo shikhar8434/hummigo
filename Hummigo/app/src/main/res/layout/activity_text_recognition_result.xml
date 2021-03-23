@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a8e063"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="64dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="12dp"
+        app:cardElevation="6dp"
+        android:layout_marginRight="6dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/textspace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:padding="16dp"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:background="@android:color/transparent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.09"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Scan Result"
+                android:textSize="32dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomMenuBar"
+        style="@style/Widget.MaterialComponents.BottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:backgroundTint="#56ab2f"
+        app:fabAlignmentMode="end"
+        app:fabCradleMargin="5dp"
+        app:fabCradleRoundedCornerRadius="8dp"
+        app:hideOnScroll="true" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/selAllFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+
+        android:scaleType="center"
+        android:backgroundTint="#a8e063"
+        app:fabCustomSize="64dp"
+        app:layout_anchor="@id/bottomMenuBar"
+        app:maxImageSize="48dp"
+        app:srcCompat="@drawable/ic_baseline_mic_24" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

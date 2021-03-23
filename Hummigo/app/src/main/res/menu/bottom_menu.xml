@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:appcompat="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/action_save"
+        android:orderInCategory="100"
+        android:title="save"
+
+
+
+
+        android:icon="@drawable/ic_baseline_save_24"
+        android:iconTint="@color/white"
+        android:visible="true"
+        app:showAsAction="always"
+        appcompat:ignore="AppCompatResource">
+    </item>
+
+    <item
+        android:id="@+id/action_zoom_in"
+        android:orderInCategory="100"
+        android:title="share"
+        android:iconTint="@color/white"
+        android:icon="@drawable/ic_baseline_zoom_in_24"
+        android:visible="true"
+        app:showAsAction="always"
+        appcompat:ignore="AppCompatResource">
+
+    </item>
+    <item
+        android:id="@+id/action_zoom_out"
+        android:orderInCategory="100"
+        android:title="share"
+        android:iconTint="@color/white"
+        android:icon="@drawable/ic_baseline_zoom_out_24"
+        android:visible="true"
+        app:showAsAction="always"
+        appcompat:ignore="AppCompatResource">
+
+    </item>
+
+
+
+    <item
+        android:id="@+id/action_share"
+        android:orderInCategory="100"
+        android:title="share"
+        android:iconTint="@color/white"
+        android:icon="@drawable/ic_baseline_share_24"
+        android:visible="true"
+        app:showAsAction="always"
+        appcompat:ignore="AppCompatResource">
+
+    </item>
+</menu>

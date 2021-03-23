@@ -99,7 +99,7 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/avatar1"/>
+                        android:src="@drawable/chatbot"/>
 
                 </androidx.cardview.widget.CardView>
 
@@ -120,7 +120,7 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/avatar1" />
+                        android:src="@drawable/dumbbell" />
 
 
                 </androidx.cardview.widget.CardView>
@@ -143,7 +143,8 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/avatar1"/>
+                        android:src="@drawable/magnify"
+                        />
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
@@ -158,10 +159,13 @@
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toEndOf="@+id/card1"
                     app:layout_constraintTop_toTopOf="parent" >
+
+
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/avatar1"/>
+
+                        android:src="@drawable/pills"/>
                 </androidx.cardview.widget.CardView>
             </androidx.constraintlayout.widget.ConstraintLayout>
 
