@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1042772051232",
+    "project_id": "hummigo-393f5",
+    "storage_bucket": "hummigo-393f5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1042772051232:android:269c335a71d400244a0345",
+        "android_client_info": {
+          "package_name": "com.hummo.hummigo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1042772051232-fnpa643t1as42iqhihjolagsa6n2v0ii.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3AJRgbF7Xr3lgWcJ5Uyr2MOyXPOUyIQY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1042772051232-fnpa643t1as42iqhihjolagsa6n2v0ii.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
