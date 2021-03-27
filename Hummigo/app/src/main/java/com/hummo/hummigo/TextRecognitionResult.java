@@ -1,12 +1,15 @@
 package com.hummo.hummigo;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.icu.text.SimpleDateFormat;
 import android.os.Build;
 import android.os.Bundle;
@@ -46,6 +49,16 @@ public class TextRecognitionResult extends AppCompatActivity {
         tv=findViewById(R.id.textspace);
         tv.setText(restext);
         fab=findViewById(R.id.selAllFab);
+
+        ActionBar actionBar;
+        actionBar = getSupportActionBar();
+
+
+        ColorDrawable colorDrawable
+                = new ColorDrawable(Color.parseColor("#56ab2f"));
+
+
+        actionBar.setBackgroundDrawable(colorDrawable);
 
 
 

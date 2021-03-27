@@ -2,6 +2,7 @@ package com.hummo.hummigo;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
@@ -11,7 +12,9 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -52,6 +55,16 @@ public class TextRecognitionActivity extends AppCompatActivity {
 
         imgView = findViewById(R.id.image);
         textArea = findViewById(R.id.text);
+
+        ActionBar actionBar;
+        actionBar = getSupportActionBar();
+
+
+        ColorDrawable colorDrawable
+                = new ColorDrawable(Color.parseColor("#56ab2f"));
+
+
+        actionBar.setBackgroundDrawable(colorDrawable);
 
 
 

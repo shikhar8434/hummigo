@@ -1,10 +1,13 @@
 package com.hummo.hummigo;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.speech.RecognizerIntent;
 import android.util.Log;
@@ -63,6 +66,16 @@ public class ChatActivity extends AppCompatActivity implements BotReply {
         editMessage = findViewById(R.id.editMessage);
         btnSend = findViewById(R.id.btnSend);
         micbtn=findViewById(R.id.btnmic);
+
+        ActionBar actionBar;
+        actionBar = getSupportActionBar();
+
+
+        ColorDrawable colorDrawable
+                = new ColorDrawable(Color.parseColor("#56ab2f"));
+
+
+        actionBar.setBackgroundDrawable(colorDrawable);
 
 
         chatAdapter = new ChatAdapter(messageList, this);

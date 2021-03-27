@@ -2,6 +2,7 @@ package com.hummo.hummigo;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -24,7 +25,7 @@ import com.google.firebase.auth.GoogleAuthProvider;
 
 public class LoginActivity extends AppCompatActivity {
 
-    Button loginbtn;
+    AppCompatButton loginbtn;
     private GoogleSignInClient mGoogleSignInClient;
     private final static int RC_SIGN_IN=123;
     private FirebaseAuth mAuth;
@@ -45,7 +46,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         mAuth= FirebaseAuth.getInstance();
 
-        loginbtn= findViewById(R.id.lgnbutton);
+        loginbtn= findViewById(R.id.lgnbtn);
         loginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

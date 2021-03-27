@@ -90,6 +90,23 @@ dependencies {
     implementation "androidx.camera:camera-camera2:1.0.0-SNAPSHOT"
     implementation "androidx.camera:camera-lifecycle:1.0.0-SNAPSHOT"
     implementation "androidx.camera:camera-view:1.0.0-SNAPSHOT"
+
+    //circular image view
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    //viewpager2
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
+
+    //Animated Icons
+    implementation 'com.github.ivbaranov:materialfavoritebutton:0.1.5'
+
+    //Network image
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+    implementation 'androidx.navigation:navigation-ui:2.3.1'
+    implementation "androidx.drawerlayout:drawerlayout:1.1.1"
+
 }
 configurations {
     // Resolves dependency conflict caused by some dependencies use
