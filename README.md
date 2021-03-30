@@ -5,9 +5,10 @@
   <h1>Hummigo</h1>
   <h3>An app for making lives of people with chronic disorders and prolonged diseases easier.</h3>
   <p>
-    This project was created by us for the Google Developer Student Clubs Solution Challenge 2021. Google Developer Student Clubs Solution Challenge is an annual challenge hosted by Google developers, inviting college/university students from all over the world to learn & develop solutions for the given set of problems.  
-    
-    Every year a different set of problems is given which can improve the lifestyle of common people & creates a positive impact on the society. The problem statements for DSC Solution Challenge 2021 are 17 United Nations Sustainable Development Goals (SDGs). These 17 United Nations Sustainable Development Goals are created by the United Nations in 2015 to be achieved by 2030. The 17 UN SDGs are as follows:- 
+    This project was created by us for the Google Developer Student Clubs Solution Challenge 2021. Google Developer Student Clubs Solution Challenge is an annual challenge hosted by Google developers, inviting college/university students from all over the world to learn & develop solutions for the given set of problems.</p>
+  
+  <p>
+  Every year a different set of problems is given which can improve the lifestyle of common people and creates a positive impact on the society. The problem statements for DSC Solution Challenge 2021 are 17 United Nations Sustainable Development Goals (SDGs). These 17 United Naitons Sustainable Development Goals are created by the United Nations in 2015 to be achieved by 2030. The 17 UN SDGs are as follows :-
   </p>
   
 <ol>
@@ -55,10 +56,26 @@ The .apk file produced on building the project will require an Android device/em
 <h3>Features</h3>
 <ol>
   <li><b>Chatbot :</b> helps patients deal with daily stress and tension </li>
+  <span>
+    <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/chatbot.jpeg" />
+  </span>
   <li><b>Medicine tracker: </b>helps patients keep a track on their medication schedule </li>
+  <span>
+    <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/medicinereminder.jpeg" />
+  </span>
   <li><b>Optical Aid : </b> makes reading small printed text easier, such as contents written on medicines</li>
+  <span>
+    <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/opticalaid1.jpeg" />
+    <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/opticalaid2.jpeg" />
+  </span>
   <li><b>Excercise instructor : </b> instructs how to do an exercise properly using machine learning</li>
+  <span>
+    <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/exerciseinstructor.jpeg.jpeg" />
+  </span>
   <li><b>Push Notifications : </b>To remind the users about daily routine activities that could improve their lifestyle</li>
+  <span>
+    <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/notifications.jpeg.jpeg" />
+  </span>
 </ol>
   
 <h2>Technologies that have been used in this project</h2>
