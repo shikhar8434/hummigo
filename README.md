@@ -50,6 +50,8 @@ The .apk file produced on building the project will require an Android device/em
 
 <h2>Usage</h2>
 
+<h3>Installation</h3>
+
 <ol type='A'>
 <li>Clone the repository on your device, and build the project using Android Studio and run on the connected Android device/emulator.</li>
 <li>Download the apk from <a href="https://drive.google.com/file/d/1JLeKrZQw3KwXVhIC5AfQgCTaSrJjjhVR/view?usp=sharing">here <a/>
