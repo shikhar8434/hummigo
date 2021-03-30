@@ -2,16 +2,27 @@
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
+
+
+
     <item
         android:id="@+id/profile_menu"
+        android:icon="@drawable/user"
 
-        android:title="profile" />
+
+        android:title="Profile" />
     <item
-        android:id="@+id/share_app_menu"
+        android:id="@+id/medi_app_menu"
+        android:icon="@drawable/drugs"
 
-        android:title="Share App" />
+
+
+        android:title="My Medicines" />
     <item
         android:id="@+id/logout_menu"
+        android:icon="@drawable/logout"
+
 
         android:title="Logout" />
+
 </menu>

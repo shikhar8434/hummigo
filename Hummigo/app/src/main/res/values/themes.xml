@@ -15,4 +15,10 @@
 
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="noactionbar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <item name="android:statusBarColor" tools:targetApi="l">@color/col3</item>
+
+    </style>
 </resources>

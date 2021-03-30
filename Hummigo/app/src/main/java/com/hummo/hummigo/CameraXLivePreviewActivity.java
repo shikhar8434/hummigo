@@ -1,5 +1,6 @@
 package com.hummo.hummigo;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.lifecycle.ViewModelProvider.AndroidViewModelFactory;
 
@@ -8,6 +9,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Build.VERSION;
 import android.os.Build.VERSION_CODES;
 import android.os.Bundle;
@@ -89,6 +92,16 @@ public final class CameraXLivePreviewActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
 
         Log.d(TAG, "onCreate");
+
+        ActionBar actionBar;
+        actionBar = getSupportActionBar();
+
+
+        ColorDrawable colorDrawable
+                = new ColorDrawable(Color.parseColor("#56ab2f"));
+
+
+        actionBar.setBackgroundDrawable(colorDrawable);
 
 
 

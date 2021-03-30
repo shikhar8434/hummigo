@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#f9f3f3"
     >
 
 
@@ -13,9 +14,9 @@
         android:layout_height="wrap_content"
 
         android:text="Add Medicines"
-        android:fontFamily="@font/rubikbold"
+        android:fontFamily="@font/rubikmedium"
         android:textColor="@color/black"
-        android:textSize="40dp"
+        android:textSize="32dp"
         app:layout_constraintBottom_toTopOf="@+id/cardView4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,6 +29,7 @@
         android:layout_margin="12dp"
         android:elevation="20dp"
         app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#f9f3f3"
         app:layout_constraintBottom_toTopOf="@+id/cardView6"
         app:layout_constraintTop_toBottomOf="@+id/cardView4"
         tools:layout_editor_absoluteX="16dp">
@@ -51,6 +53,7 @@
         android:layout_margin="12dp"
         android:elevation="20dp"
         app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#f9f3f3"
         app:layout_constraintBottom_toTopOf="@+id/cardView5"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
         tools:layout_editor_absoluteX="12dp">
@@ -78,6 +81,7 @@
         android:layout_margin="12dp"
         app:cardCornerRadius="20dp"
         app:cardElevation="8dp"
+        app:cardBackgroundColor="#f9f3f3"
         app:layout_constraintBottom_toTopOf="@+id/savebtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.048"
@@ -95,6 +99,7 @@
 
         <NumberPicker
             android:id="@+id/numpick"
+            android:background="#f9f3f3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -108,6 +113,7 @@
         android:layout_height="100dp"
         app:cardElevation="8dp"
         app:cardCornerRadius="12dp"
+        app:cardBackgroundColor="#f9f3f3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"

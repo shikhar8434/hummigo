@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/white"
+    android:background="#f9f3f3"
     tools:context=".MainActivity">
 
     <ImageView
@@ -21,7 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.15"
-        android:background="@color/white"
+        android:background="#f9f3f3"
         android:gravity="center">
 
         <LinearLayout
@@ -49,7 +49,8 @@
         android:layout_height="0dp"
         android:layout_weight="0.15"
         android:gravity="center"
-        android:background="@color/white"
+
+        android:background="#f9f3f3"
         android:orientation="horizontal">
 
         <LinearLayout

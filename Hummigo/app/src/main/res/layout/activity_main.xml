@@ -130,7 +130,7 @@
                         android:layout_gravity="center"
                         android:layout_margin="4dp"
                         android:fontFamily="@font/rubikmedium"
-                        android:text="Stories"
+                        android:text="Blogs"
                         android:textColor="@color/white"
                         android:textSize="16sp" />
                 </LinearLayout>
@@ -198,7 +198,7 @@
                             android:padding="4dp"
                             android:text="chatbot"
                             android:textColor="@color/white"
-                            android:textSize="20dp" />
+                            android:textSize="16dp" />
                     </LinearLayout>
 
 
@@ -239,7 +239,7 @@
                             android:padding="4dp"
                             android:text="excercise"
                             android:textColor="@color/white"
-                            android:textSize="20dp" />
+                            android:textSize="16dp" />
                     </LinearLayout>
 
 
@@ -281,7 +281,7 @@
                             android:padding="4dp"
                             android:text="optical aid"
                             android:textColor="@color/white"
-                            android:textSize="20dp" />
+                            android:textSize="16dp" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -320,7 +320,7 @@
                             android:padding="4dp"
                             android:text="medicines"
                             android:textColor="@color/white"
-                            android:textSize="20dp" />
+                            android:textSize="16dp" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -337,11 +337,14 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:background="#FDFCFC"
+        app:itemTextAppearance="@font/rubikmedium"
+
         android:backgroundTint="#FFFFFF"
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/main_drawer_header"
         app:itemIconTint="@color/black"
         app:itemTextColor="#050505"
+
         app:menu="@menu/main_drawer_menu" />
 
 </androidx.drawerlayout.widget.DrawerLayout>

@@ -1,10 +1,13 @@
 package com.hummo.hummigo;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -47,6 +50,8 @@ public class LoginActivity extends AppCompatActivity {
         mAuth= FirebaseAuth.getInstance();
 
         loginbtn= findViewById(R.id.lgnbtn);
+
+
         loginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -55,6 +60,16 @@ public class LoginActivity extends AppCompatActivity {
         });
 
         createRequest();
+
+        ActionBar actionBar;
+        actionBar = getSupportActionBar();
+
+
+        ColorDrawable colorDrawable
+                = new ColorDrawable(Color.parseColor("#56ab2f"));
+
+
+        actionBar.setBackgroundDrawable(colorDrawable);
     }
 
     private void createRequest() {

@@ -20,14 +20,19 @@
         android:roundIcon="@mipmap/ic_hummigo_icon_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Hummigo">
-        <activity android:name=".FeedActivity"></activity>
-        <activity android:name=".medicine.AddMedicine" />
-        <activity android:name=".LoginActivity">
+        <activity android:name=".SplashScreen"
+            android:theme="@style/noactionbar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".Profile" />
+        <activity android:name=".FeedActivity" />
+        <activity android:name=".medicine.AddMedicine" />
+        <activity android:name=".LoginActivity">
+
         </activity>
         <activity android:name=".SettingsActivity" />
         <activity android:name=".CameraXLivePreviewActivity" />
@@ -43,6 +48,8 @@
                 <action android:name="android.intent.action.RESPOND_VIA_MESSAGE" />
             </intent-filter>
         </service>
+
+        <receiver android:name=".medicine.AlertReceiver" />
     </application>
 
 </manifest>

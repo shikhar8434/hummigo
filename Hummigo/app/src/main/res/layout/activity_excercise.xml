@@ -4,111 +4,302 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/mygrad"
+    android:background="#f9f3f3"
 
     tools:context=".ExcerciseActivity">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:background="@drawable/mygrad"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Your Workout"
+            android:fontFamily="@font/rubikbold"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:layout_margin="16sp"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView1"
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        android:elevation="12dp"
+
+        app:cardCornerRadius="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView4"
+        app:layout_constraintEnd_toStartOf="@+id/cardView3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:padding="16sp">
+            android:layout_height="24dp"
+            android:background="@drawable/mygrad"
+            android:elevation="1dp"
+
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="16sp"
-                android:layout_marginTop="32dp"
-                android:fontFamily="@font/rubikbold"
-                android:text="Choose Your Workout"
-                android:textColor="@color/black"
-                android:textSize="28dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:ignore="MissingConstraints" />
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/rubikmedium"
+                android:text="Excercise Right Arm"/>
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardView"
-                android:layout_width="match_parent"
-                android:layout_height="240dp"
-                android:layout_margin="16sp"
-                app:cardCornerRadius="24sp"
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ex1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/armright"
+            tools:layout_editor_absoluteX="66dp"
+            tools:layout_editor_absoluteY="357dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        android:layout_marginEnd="16dp"
+
+        android:elevation="12dp"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:background="@drawable/mygrad"
+            android:elevation="1dp"
+
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/rubikmedium"
+                android:text="Excercise Left Knee"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ex4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            app:srcCompat="@drawable/leftknee"
+            tools:layout_editor_absoluteX="66dp"
+            tools:layout_editor_absoluteY="357dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        android:elevation="12dp"
+
+        app:cardCornerRadius="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cardView1"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:background="@drawable/mygrad"
+            android:elevation="1dp"
+
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/rubikmedium"
+                android:text="Excercise Left Arm"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ex2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
 
 
-                app:cardElevation="8dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView3">
+            app:srcCompat="@drawable/armleft"
+            tools:layout_editor_absoluteX="66dp"
+            tools:layout_editor_absoluteY="357dp" />
 
-                <ImageView
-                    android:id="@+id/ex1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/pose1" />
-            </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardView2"
-                android:layout_width="match_parent"
-                android:layout_height="240dp"
-                android:layout_margin="16sp"
-                app:cardCornerRadius="24dp"
-                app:cardElevation="8dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/cardView">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        android:elevation="12dp"
 
-                <ImageView
-                    android:id="@+id/ex2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/pose2" />
-            </androidx.cardview.widget.CardView>
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardView3"
-                android:layout_width="match_parent"
-                android:layout_height="240dp"
-                android:layout_margin="16sp"
-                app:cardCornerRadius="24dp"
-                app:cardElevation="8dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/cardView2">
+        app:cardCornerRadius="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView5"
+        app:layout_constraintEnd_toStartOf="@+id/cardView2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:background="@drawable/mygrad"
+            android:elevation="1dp"
 
-                <ImageView
-                    android:id="@+id/ex3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/pose3" />
-            </androidx.cardview.widget.CardView>
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="240dp"
-                android:layout_margin="16sp"
-                app:cardCornerRadius="24dp"
-                app:cardElevation="8dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/cardView3">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/rubikmedium"
+                android:text="Excercise Right Knee"/>
 
-                <ImageView
-                    android:id="@+id/ex4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/pose4" />
-            </androidx.cardview.widget.CardView>
-            
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
 
-    </ScrollView>
+        <ImageView
+            android:id="@+id/ex3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+
+
+            app:srcCompat="@drawable/rightknee"
+            tools:layout_editor_absoluteX="66dp"
+            tools:layout_editor_absoluteY="357dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView5"
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        android:elevation="12dp"
+
+        app:cardCornerRadius="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cardView6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView4">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:background="@drawable/mygrad"
+            android:elevation="1dp"
+
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/rubikmedium"
+                android:text="Excercise Right Leg"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ex5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            app:srcCompat="@drawable/rightleg"
+            tools:layout_editor_absoluteX="66dp"
+            tools:layout_editor_absoluteY="357dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView6"
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        android:layout_marginEnd="16dp"
+
+        android:elevation="12dp"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:background="@drawable/mygrad"
+            android:elevation="1dp"
+
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/rubikmedium"
+                android:text="Excercise Left Leg"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ex6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            app:srcCompat="@drawable/leftleg"
+            tools:layout_editor_absoluteX="66dp"
+            tools:layout_editor_absoluteY="357dp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

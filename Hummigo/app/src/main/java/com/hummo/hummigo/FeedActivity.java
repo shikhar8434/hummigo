@@ -52,54 +52,55 @@ public class FeedActivity extends AppCompatActivity {
         Slide slide1 = new Slide();
         slide1.setAuthor("Seemant");
         slide1.setDate("24th Oct");
-        slide1.setDesc("fdasdf dasfkajdflas dsfkajdflkdsfj kldfjalsdkfjlkdsf jlkadsjfs" +
-                "dsfjklasdfj dfkjsldflsdf djfklsdjflsdkaf dkfjdslfksd jlkdfjsd fdsf" +
-                "fjlksdflksdf dfjlkdfjldskf jdlfsdlfkdf jdlkfjsdlfkjdlf slkdfjlksdfjdlfk" +
-                "dsfjlasfkdsaf dfjdlskfjdlskf");
-        slide1.setHeading("This is a demo post straight from Android Studio");
+        slide1.setDesc("In Today's Busy Life , We have got so invested to take out"+
+                " some time for ourselves. We forget that how"+
+                " important it is to excercise daily to keep our body healthy"+
+                " both physically and mentally and keep diseases away");
+        slide1.setHeading("Excercise For Everybody");
         slide1.setId(1);
         slide1.setLikesCount(15);
-        slide1.setImageURL("https://images.pexels.com/photos/1112290/pexels-photo-1112290.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+        slide1.setImageURL("https://images.pexels.com/photos/4473622/pexels-photo-4473622.jpeg?cs=srgb&dl=pexels-ketut-subiyanto-4473622.jpg&fm=jpg");
 
 
         slideList.add(slide1);
 
         Slide slide2 = new Slide();
-        slide2.setAuthor("Shekhar");
+        slide2.setAuthor("Shikhar");
         slide2.setDate("24th Oct");
-        slide2.setDesc("fdasdf dasfkajdflas dsfkajdflkdsfj kldfjalsdkfjlkdsf jlkadsjfs" +
-                "dsfjklasdfj dfkjsldflsdf djfklsdjflsdkaf dkfjdslfksd jlkdfjsd fdsf" +
-                "fjlksdflksdf dfjlkdfjldskf jdlfsdlfkdf jdlkfjsdlfkjdlf slkdfjlksdfjdlfk" +
-                "dsfjlasfkdsaf dfjdlskfjdlskf");
-        slide2.setHeading("This is a demo post straight from Android Studio");
+        slide2.setDesc("Depression is the most common yet neglected illness which"+
+                " does not affects directly but accelerates the vulnerability"+
+                " to major Long Term Illnesses and consumes ones mind and body."+
+                " The best way to fight depression is being social"
+               );
+        slide2.setHeading("Depression: The Cause Behind Major Illness");
         slide2.setId(2);
         slide2.setLikesCount(15);
-        slide2.setImageURL("https://images.pexels.com/photos/1112290/pexels-photo-1112290.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+        slide2.setImageURL("https://images.pexels.com/photos/5255996/pexels-photo-5255996.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
 
         slideList.add(slide2);
 
         Slide slide3 = new Slide();
-        slide3.setAuthor("Shekhar");
+        slide3.setAuthor("Shikhar");
         slide3.setDate("24th Oct");
-        slide3.setDesc("fdasdf dasfkajdflas dsfkajdflkdsfj kldfjalsdkfjlkdsf jlkadsjfs" +
-                "dsfjklasdfj dfkjsldflsdf djfklsdjflsdkaf dkfjdslfksd jlkdfjsd fdsf" +
-                "fjlksdflksdf dfjlkdfjldskf jdlfsdlfkdf jdlkfjsdlfkjdlf slkdfjlksdfjdlfk" +
-                "dsfjlasfkdsaf dfjdlskfjdlskf");
-        slide3.setHeading("This is a demo post straight from Android Studio");
+        slide3.setDesc("It is a well known fact that for ages that green"+
+                " leafy vegetables and fruits in ones diet boosts immunity"+
+                " because these vegetables are the best source of multiple macro"+
+                " and micro nutrients like Iron , Calcium, Vitamins etc");
+        slide3.setHeading("More vegetables in Diet equals better health");
         slide3.setId(3);
         slide3.setLikesCount(15);
-        slide3.setImageURL("https://images.pexels.com/photos/1112290/pexels-photo-1112290.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+        slide3.setImageURL("https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?cs=srgb&dl=pexels-ella-olsson-1640777.jpg&fm=jpg");
 
         slideList.add(slide3);
 
         Slide slide4 = new Slide();
         slide4.setAuthor("Shekhar");
         slide4.setDate("24th Oct");
-        slide4.setDesc("fdasdf dasfkajdflas dsfkajdflkdsfj kldfjalsdkfjlkdsf jlkadsjfs" +
-                "dsfjklasdfj dfkjsldflsdf djfklsdjflsdkaf dkfjdslfksd jlkdfjsd fdsf" +
-                "fjlksdflksdf dfjlkdfjldskf jdlfsdlfkdf jdlkfjsdlfkjdlf slkdfjlksdfjdlfk" +
-                "dsfjlasfkdsaf dfjdlskfjdlskf");
-        slide4.setHeading("This is a demo post straight from Android Studio");
+        slide4.setDesc("Happiness is the most underrated remedy to most of the"+
+                " health related issues. A happy person is more likely to "+
+        " have a healthy body too. So being happy in today's busy world "+
+                " is must. Happiness truely is the true source of good health");
+        slide4.setHeading("Happiness is the key to a healthy and positive life");
         slide4.setId(4);
         slide4.setLikesCount(15);
         slide4.setImageURL("https://images.pexels.com/photos/1112290/pexels-photo-1112290.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");

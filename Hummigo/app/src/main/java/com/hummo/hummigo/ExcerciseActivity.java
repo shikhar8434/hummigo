@@ -23,6 +23,8 @@ public class ExcerciseActivity extends AppCompatActivity {
         ImageView image2 = findViewById(R.id.ex2);
         ImageView image3 = findViewById(R.id.ex3);
         ImageView image4 = findViewById(R.id.ex4);
+        ImageView image5= findViewById(R.id.ex5);
+        ImageView image6=findViewById(R.id.ex6);
 
         ActionBar actionBar;
         actionBar = getSupportActionBar();
@@ -65,6 +67,25 @@ public class ExcerciseActivity extends AppCompatActivity {
                 tap=4;
                 Intent intent4= new Intent(ExcerciseActivity.this,CameraXLivePreviewActivity.class);
                 startActivity(intent4);
+            }
+        });
+
+        image5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                tap=5;
+                Intent intent5= new Intent(ExcerciseActivity.this,CameraXLivePreviewActivity.class);
+                startActivity(intent5);
+
+            }
+        });
+        image6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                tap=6;
+                Intent intent6= new Intent(ExcerciseActivity.this,CameraXLivePreviewActivity.class);
+                startActivity(intent6);
+
             }
         });
 

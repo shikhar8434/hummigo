@@ -7,7 +7,7 @@ android {
 
     signingConfigs {
         debug {
-            storeFile file('/Users/shikharsrivastava/Documents/GitHub/hummigo/Hummigo/hummingo.jks')
+            storeFile file(projectDir.absolutePath + '/hummingo.jks')
             storePassword 'hummingo123'
             keyPassword 'hummingo123'
             keyAlias 'key0'

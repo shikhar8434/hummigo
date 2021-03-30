@@ -3,11 +3,13 @@ package com.hummo.hummigo;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.cardview.widget.CardView;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -19,6 +21,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.Toolbar;
 
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -31,7 +35,7 @@ public class MainActivity extends AppCompatActivity implements SleepDialog.Sleep
     Toolbar mainToolBar;
     LinearLayout stories;
     ImageView sleep,water;
-    TextView sleeptv,watertv;
+     TextView sleeptv,watertv;
 
     String Day;
 
@@ -98,6 +102,24 @@ public class MainActivity extends AppCompatActivity implements SleepDialog.Sleep
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.main_drawer_layout);
         navigationView.setNavigationItemSelectedListener(navigationItemSelectedListener);
+
+
+        GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(getApplicationContext());
+        if (acct != null) {
+            String personName = acct.getDisplayName();
+            TextView message = (TextView) navigationView.getHeaderView(0).findViewById(R.id.day_tv);
+            message.setText(personName);
+            String personGivenName = acct.getGivenName();
+            String personFamilyName = acct.getFamilyName();
+            String personEmail = acct.getEmail();
+            String personId = acct.getId();
+
+
+
+        }
+
+
+
 
 
 
@@ -168,12 +190,20 @@ public class MainActivity extends AppCompatActivity implements SleepDialog.Sleep
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
+
+
+
+
                 case R.id.profile_menu:
                     Toast.makeText(MainActivity.this, "Profile", Toast.LENGTH_SHORT).show();
+                    Intent intent= new Intent(MainActivity.this,Profile.class);
+                    startActivity(intent);
                     drawerLayout.closeDrawer(GravityCompat.START);
                     break;
-                case R.id.share_app_menu:
-                    Toast.makeText(MainActivity.this, "Bookmarks", Toast.LENGTH_SHORT).show();
+                case R.id.medi_app_menu:
+                    Toast.makeText(MainActivity.this, "Medicines", Toast.LENGTH_SHORT).show();
+                    Intent intent2= new Intent(MainActivity.this,MedicineActivity.class);
+                    startActivity(intent2);
                     drawerLayout.closeDrawer(GravityCompat.START);
                     break;
                 default:
@@ -191,6 +221,8 @@ public class MainActivity extends AppCompatActivity implements SleepDialog.Sleep
             Intent intent = new Intent(this, LoginActivity.class);
             startActivity(intent);
         } else {
+            Intent logoutint= new Intent(MainActivity.this,LoginActivity.class);
+            startActivity(logoutint);
             FirebaseAuth.getInstance().signOut();
             Toast.makeText(this, "Logged Out", Toast.LENGTH_LONG).show();
             recreate();
