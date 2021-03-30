@@ -70,7 +70,7 @@ The .apk file produced on building the project will require an Android device/em
   <li>Google ML Kit's Text Recognition API</li>
   <li>Firebase Realtime Database</li>
   <li>Firebase Cloud Messaging</li>
-<ol>
+</ol>
   
 <h2>Our contribution in creating a healthier and happier society</h2>
 <p>We believe that regular monitoring of daily health and abiding strictly to medication and exercise discipline can greatly improve the conditions of people suffering from chronic disorders or prolonged dieases like diabetes, Parkinson's, High Blood Pressure. Easier monitoring and better anagement of daily health can prevent or at the very least, delay the progression of such diseases into their advanced stages. And therefore, we have come up with a one-stop solution for monitoring and better management of daily health. </p>
