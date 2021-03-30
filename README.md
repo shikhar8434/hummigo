@@ -57,24 +57,24 @@ The .apk file produced on building the project will require an Android device/em
 <ol>
   <li><b>Chatbot :</b> helps patients deal with daily stress and tension </li>
   <div>
-    <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/chatbot.jpeg" height=100/>
+    <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/chatbot.jpeg" height=300/>
   </div>
   <li><b>Medicine tracker: </b>helps patients keep a track on their medication schedule </li>
   <div>
-    <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/medicinereminder.jpeg"  height=100/>
+    <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/medicinereminder.jpeg"  height=300/>
   </div>
   <li><b>Optical Aid : </b> makes reading small printed text easier, such as contents written on medicines</li>
   <div style='display:flex;flex-direction:row'>
-    <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/opticalaid1.jpeg"  height=100/>
-    <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/opticalaid2.jpeg"  height=100/>
+    <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/opticalaid1.jpeg"  height=300/>
+    <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/opticalaid2.jpeg"  height=300/>
   </div>
   <li><b>Excercise instructor : </b> instructs how to do an exercise properly using machine learning</li>
   <div>
-    <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/exerciseinstructor.jpeg.jpeg"  height=100/>
+    <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/exerciseinstructor.jpeg"  height=300/>
   </div>
   <li><b>Push Notifications : </b>To remind the users about daily routine activities that could improve their lifestyle</li>
   <div>
-    <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/notifications.jpeg.jpeg"  height=100/>
+    <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/notifications.jpeg"  height=300/>
   </div>
 </ol>
   
