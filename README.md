@@ -56,26 +56,26 @@ The .apk file produced on building the project will require an Android device/em
 <h3>Features</h3>
 <ol>
   <li><b>Chatbot :</b> helps patients deal with daily stress and tension </li>
-  <span>
-    <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/chatbot.jpeg" />
-  </span>
+  <div>
+    <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/chatbot.jpeg" height=100/>
+  </div>
   <li><b>Medicine tracker: </b>helps patients keep a track on their medication schedule </li>
-  <span>
-    <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/medicinereminder.jpeg" />
-  </span>
+  <div>
+    <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/medicinereminder.jpeg"  height=100/>
+  </div>
   <li><b>Optical Aid : </b> makes reading small printed text easier, such as contents written on medicines</li>
-  <span>
-    <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/opticalaid1.jpeg" />
-    <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/opticalaid2.jpeg" />
-  </span>
+  <div style='display:flex;flex-direction:row'>
+    <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/opticalaid1.jpeg"  height=100/>
+    <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/opticalaid2.jpeg"  height=100/>
+  </div>
   <li><b>Excercise instructor : </b> instructs how to do an exercise properly using machine learning</li>
-  <span>
-    <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/exerciseinstructor.jpeg.jpeg" />
-  </span>
+  <div>
+    <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/exerciseinstructor.jpeg.jpeg"  height=100/>
+  </div>
   <li><b>Push Notifications : </b>To remind the users about daily routine activities that could improve their lifestyle</li>
-  <span>
-    <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/notifications.jpeg.jpeg" />
-  </span>
+  <div>
+    <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/notifications.jpeg.jpeg"  height=100/>
+  </div>
 </ol>
   
 <h2>Technologies that have been used in this project</h2>
