@@ -76,7 +76,7 @@ public class TextRecognitionActivity extends AppCompatActivity {
                     runTextRecognition();
 
                 }catch (Exception e){
-                    Toast.makeText(TextRecognitionActivity.this, "Görsel Seçilmedi", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(TextRecognitionActivity.this, "No Image Selected", Toast.LENGTH_SHORT).show();
                 }
 
             }
@@ -141,7 +141,7 @@ public class TextRecognitionActivity extends AppCompatActivity {
             dispatchTakePictureIntent();
         }
         else{
-            Toast.makeText(this, "Kamera İzni Kabul Edilmedi", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Camera Permission Denied", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -173,7 +173,7 @@ public class TextRecognitionActivity extends AppCompatActivity {
                     imgView.setImageBitmap(galleryImage);
 
                 }catch (Exception e){
-                    Toast.makeText(this, "Görsel Galeriden Alınamadı",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "Image Could Not Be Taken From Gallery",Toast.LENGTH_SHORT).show();
                 }
                 break;
         }
@@ -201,7 +201,8 @@ public class TextRecognitionActivity extends AppCompatActivity {
                                 new OnFailureListener() {
                                     @Override
                                     public void onFailure(@NonNull Exception e) {
-                                        Toast.makeText(TextRecognitionActivity.this, "Başarısız İşlem",Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(TextRecognitionActivity.this, "\n" +
+                                                "Failed Transaction",Toast.LENGTH_SHORT).show();
                                     }
                                 });
     }
@@ -209,7 +210,8 @@ public class TextRecognitionActivity extends AppCompatActivity {
     private void processTextRecognition(Text visionText) {
         List<Text.TextBlock> blocks = visionText.getTextBlocks();
         if (blocks.size() == 0){
-            Toast.makeText(TextRecognitionActivity.this, "Görselde Metin Tespit Edilemedi",Toast.LENGTH_LONG).show();
+            Toast.makeText(TextRecognitionActivity.this, "\n" +
+                    "Unable to Detect Text in Image",Toast.LENGTH_LONG).show();
         }
 
         StringBuilder text = new StringBuilder();

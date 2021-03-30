@@ -163,7 +163,7 @@ public class TextRecognitionResult extends AppCompatActivity {
                 {
                     savepdf();
                 }
-                else Toast.makeText(this, "parmission denied..", Toast.LENGTH_SHORT).show();
+                else Toast.makeText(this, "permission denied..", Toast.LENGTH_SHORT).show();
         }
     }
 }
