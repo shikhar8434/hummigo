@@ -1,6 +1,6 @@
 
   <div>
-    <center><img src="https://user-images.githubusercontent.com/54185164/113014954-b30e9300-919a-11eb-92d4-ee07097f3eed.png"/></center>
+    <center><img src="https://github.com/shikhar8434/hummigo/tree/main/screenshots/hummigologo.jpeg"/></center>
   </div>
   <h1>Hummigo</h1>
   <h3>An app for making lives of people with chronic disorders and prolonged diseases easier.</h3>
@@ -51,7 +51,7 @@ The .apk file produced on building the project will require an Android device/em
 <h2>Usage</h2>
 
 <h3>Installation from the apk</h3>
-<p>Download the apk from <a href="">here<a/><p>
+<p>Download the apk from <a href="https://drive.google.com/file/d/1JLeKrZQw3KwXVhIC5AfQgCTaSrJjjhVR/view?usp=sharing">here<a/><p>
 
 <h3>Features</h3>
 <ol>
