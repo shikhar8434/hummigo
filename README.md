@@ -1,5 +1,5 @@
 <center>
-  ![hummigologo](https://user-images.githubusercontent.com/54185164/113014954-b30e9300-919a-11eb-92d4-ee07097f3eed.png)
+  <img src="https://user-images.githubusercontent.com/54185164/113014954-b30e9300-919a-11eb-92d4-ee07097f3eed.png"/>
   <h1>Hummigo</h1>
   <h3>An app for making lives of people with chronic disorders and prolonged diseases easier.</h3>
 </center>
