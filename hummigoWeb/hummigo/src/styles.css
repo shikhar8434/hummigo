@@ -1,0 +1,13 @@
+* {
+    margin:0;
+}
+.titlebar
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-image: linear-gradient(to bottom right, #56ab2f, #a8e063)
+}
+.titlebar img {
+    height: 15vh;
+}
