@@ -1,6 +1,6 @@
 
   <div>
-    <center><img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/hummigologo.jpeg" height=300/></center>
+    <center><img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/hummigologo.jpeg" height=600/></center>
   </div>
   <h1>Hummigo</h1>
   <h3>An app for making lives of people with chronic disorders and prolonged diseases easier.</h3>
