@@ -82,9 +82,12 @@ The .apk file produced on building the project will require an Android device/em
   <p>Hummigo webapp supplements the hummigo app and aims at making an impact on community by providing nearby services such as diagnostic services, 
     hospitals, gyms, yoga classes etc. and also provides the best platform to read or write blogs and share personal stories of people suffering with
     chronic illness.</p>
+  </div>
+  
+  <h2>Links</h2>
+  
   [Github Repository of Hummigo webapp](https://github.com/abhineetpandey10/hummigoweb)
   [Website link](https://hummigo.herokuapp.com/Home)
-  </div>
 
   
 <h2>Technologies that have been used in this project</h2>
