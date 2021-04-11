@@ -69,6 +69,7 @@ The .apk file produced on building the project will require an Android device/em
   <li><b>Blogs : </b>Helps connecting people having similar problems and gives them a space to express themselves</li>
   <div>
     <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/photo_2021-04-11%2019.00.44.jpeg"  height=300/>
+    <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/hummigowebview.jpeg"  height=300/>
   </div>
 </ol>
 
