@@ -63,10 +63,13 @@ The .apk file produced on building the project will require an Android device/em
   <li><b>Chatbot :</b> helps patients deal with daily stress and tension </li>
   <div>
     <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/chatbot.jpeg" height=300/>
+     <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/photo_2021-04-11%2019.00.50.jpeg" height=300/>
   </div>
   <li><b>Medicine tracker: </b>helps patients keep a track on their medication schedule </li>
   <div>
     <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/medicinereminder.jpeg"  height=300/>
+     <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/photo_2021-04-11%2019.06.35.jpeg"  height=300/>
+    
   </div>
   <li><b>Optical Aid : </b> makes reading small printed text easier, such as contents written on medicines</li>
   <div style='display:flex;flex-direction:row'>
@@ -76,6 +79,8 @@ The .apk file produced on building the project will require an Android device/em
   <li><b>Excercise instructor : </b> instructs how to do an exercise properly using machine learning</li>
   <div>
     <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/exerciseinstructor.jpeg"  height=300/>
+    <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/photo_2021-04-11%2019.00.56.jpeg"  height=300/>
+    
   </div>
   <li><b>Push Notifications : </b>To remind the users about daily routine activities that could improve their lifestyle</li>
   <div>
