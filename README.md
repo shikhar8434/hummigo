@@ -8,28 +8,8 @@
     This project was created by us for the Google Developer Student Clubs Solution Challenge 2021. Google Developer Student Clubs Solution Challenge is an annual challenge hosted by Google developers, inviting college/university students from all over the world to learn & develop solutions for the given set of problems.</p>
   
   <p>
-  Every year a different set of problems is given which can improve the lifestyle of common people and creates a positive impact on the society. The problem statements for DSC Solution Challenge 2021 are 17 United Nations Sustainable Development Goals (SDGs). These 17 United Naitons Sustainable Development Goals are created by the United Nations in 2015 to be achieved by 2030. The 17 UN SDGs are as follows :-
+  Every year a different set of problems is given which can improve the lifestyle of common people and creates a positive impact on the society. The problem statements for DSC Solution Challenge 2021 are 17 United Nations Sustainable Development Goals (SDGs). 
   </p>
-  
-<ol>
-  <li>No Poverty</li>
-  <li>Life on Land</li>
-  <li>Good Health & Wellbeing</li>
-  <li>Zero Hunger</li>
-  <li>Partnerships</li>
-  <li>Peace, Justice & Strong Institutions</li>
-  <li>Sustainable Cities</li>
-  <li>Clean Water & Sanitation</li>
-  <li>Decent Work & Economic Growth</li>
-  <li>Quality Education</li>
-  <li>Reduced Inequalities</li>
-  <li>Responsible Consumption & Production</li>
-  <li>Climate Action</li>
-  <li>Affordable & Clean Energy</li>
-  <li>Industry, Innovation, & Infrastructure</li>
-  <li>Life Below Water</li>
-  <li>Gender Equality and Women’s Empowerment</li>
-</ol>
 
 <p>We chose the "Good Health and Well-Being" United Nations Sustainable Development Goal to work upon.</p>
 <h2>Why Hummigo?</h2>
