@@ -151,6 +151,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="#ffffff"
+                    android:clickable="true"
                     android:layout_centerInParent="true"
                     android:text="Tap to read more about this article."
                     android:textSize="15dp" />

@@ -1,6 +1,7 @@
 package com.hummo.hummigo.stories;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import com.hummo.hummigo.R;
+import com.hummo.hummigo.WebViewActivity;
 
 import java.util.List;
 
@@ -33,6 +35,7 @@ public class ViewPagerAdapter extends RecyclerView.Adapter<ViewPagerAdapter.Page
                 LayoutInflater.from(parent.getContext()).inflate(
                         R.layout.item_slide,parent, false
                 )
+
         );
     }
 
@@ -55,6 +58,7 @@ public class ViewPagerAdapter extends RecyclerView.Adapter<ViewPagerAdapter.Page
         private TextView readURL;
         private TextView likesCount;
 
+
         public PagerViewHolder(@NonNull View itemView) {
             super(itemView);
 
@@ -64,6 +68,17 @@ public class ViewPagerAdapter extends RecyclerView.Adapter<ViewPagerAdapter.Page
             desc = itemView.findViewById(R.id.slide_item_description);
             image = itemView.findViewById(R.id.slide_item_image);
             likesCount = itemView.findViewById(R.id.slide_item_like_count);
+            TextView linktv=itemView.findViewById(R.id.slide_item_article_link);
+            String url="https://hummigo.herokuapp.com/Blogs";
+            linktv.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(context, WebViewActivity.class);
+                    intent.putExtra("URL",url);
+                    itemView.getContext().startActivity(intent);
+                }
+            });
+
         }
 
         void setPagerViewHolder(Slide slide){

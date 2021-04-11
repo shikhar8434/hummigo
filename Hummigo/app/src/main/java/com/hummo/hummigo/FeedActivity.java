@@ -5,10 +5,12 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.widget.ViewPager2;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 import com.hummo.hummigo.stories.Slide;
 import com.hummo.hummigo.stories.ViewPagerAdapter;
@@ -21,6 +23,8 @@ public class FeedActivity extends AppCompatActivity {
     private ViewPagerAdapter viewPagerAdapter;
     private ViewPager2 viewPager2;
     private List<Slide> slideList = new ArrayList<>();
+    public static String url;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +38,8 @@ public class FeedActivity extends AppCompatActivity {
         viewPager2.setPageTransformer(new DepthPageTransformer());
         //viewPager2.setOverScrollMode(View.OVER_SCROLL_NEVER);
         viewPager2.setAdapter(viewPagerAdapter);
+
+
 
         ActionBar actionBar;
         actionBar = getSupportActionBar();
@@ -58,6 +64,8 @@ public class FeedActivity extends AppCompatActivity {
                 " both physically and mentally and keep diseases away");
         slide1.setHeading("Excercise For Everybody");
         slide1.setId(1);
+
+
         slide1.setLikesCount(15);
         slide1.setImageURL("https://images.pexels.com/photos/4473622/pexels-photo-4473622.jpeg?cs=srgb&dl=pexels-ketut-subiyanto-4473622.jpg&fm=jpg");
 
@@ -82,7 +90,7 @@ public class FeedActivity extends AppCompatActivity {
         Slide slide3 = new Slide();
         slide3.setAuthor("Shikhar");
         slide3.setDate("24th Oct");
-        slide3.setDesc("It is a well known fact that for ages that green"+
+        slide3.setDesc("It is a well known fact for ages that green"+
                 " leafy vegetables and fruits in ones diet boosts immunity"+
                 " because these vegetables are the best source of multiple macro"+
                 " and micro nutrients like Iron , Calcium, Vitamins etc");
@@ -99,7 +107,7 @@ public class FeedActivity extends AppCompatActivity {
         slide4.setDesc("Happiness is the most underrated remedy to most of the"+
                 " health related issues. A happy person is more likely to "+
         " have a healthy body too. So being happy in today's busy world "+
-                " is must. Happiness truely is the true source of good health");
+                " is must. Staying Happy minimizes the risk of depression too");
         slide4.setHeading("Happiness is the key to a healthy and positive life");
         slide4.setId(4);
         slide4.setLikesCount(15);

@@ -93,6 +93,8 @@ public class MainActivity extends AppCompatActivity implements SleepDialog.Sleep
 
 
         actionBar.setBackgroundDrawable(colorDrawable);
+        
+
 
 
 
