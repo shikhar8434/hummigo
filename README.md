@@ -86,7 +86,7 @@ The .apk file produced on building the project will require an Android device/em
   
   <h2>Links</h2>
   
-  [Github Repository of Hummigo webapp](https://github.com/abhineetpandey10/hummigoweb)
+  [Github Repository of Hummigo webapp](https://github.com/abhineetpandey10/hummigoweb)<br>
   [Website link](https://hummigo.herokuapp.com/Home)
 
   
