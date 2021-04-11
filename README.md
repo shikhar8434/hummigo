@@ -74,7 +74,7 @@ The .apk file produced on building the project will require an Android device/em
 
 <h2>Architecture of App</h2>
   <div>
-    <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/architecture.png"  height=480 width=640/>
+    <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/architecture.png"  height=480 width=1296/>
   </div>
 
   
