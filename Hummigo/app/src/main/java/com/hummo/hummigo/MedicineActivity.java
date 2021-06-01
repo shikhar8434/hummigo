@@ -10,8 +10,10 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -20,6 +22,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.mlkit.vision.text.TextRecognition;
 import com.hummo.hummigo.medicine.AddMedicine;
 import com.hummo.hummigo.medicine.MedicineAdapter;
 import com.hummo.hummigo.medicine.MedicineHelper;
@@ -53,6 +56,8 @@ public class MedicineActivity extends AppCompatActivity {
         medilist.setAdapter(medadapter);
         ActionBar actionBar;
         actionBar = getSupportActionBar();
+
+
 
 
         ColorDrawable colorDrawable

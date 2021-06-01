@@ -23,17 +23,19 @@ import android.widget.Toolbar;
 
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.mlkit.vision.text.TextRecognition;
 
 import java.time.LocalDate;
 
 public class MainActivity extends AppCompatActivity implements SleepDialog.SleepDialogListener {
 
-    CardView header,header2,card1,card2,card3,card4;
+    CardView header,blogcard,card1,card2,card3,card4;
     DrawerLayout drawerLayout;
     Toolbar mainToolBar;
-    LinearLayout stories;
+    TextView stories;
     ImageView sleep,water;
      TextView sleeptv,watertv;
 
@@ -48,17 +50,29 @@ public class MainActivity extends AppCompatActivity implements SleepDialog.Sleep
         setContentView(R.layout.activity_main);
 
         header=findViewById(R.id.headercard);
-        header2=findViewById(R.id.header2);
+        blogcard=findViewById(R.id.blogcard);
+
         card1=findViewById(R.id.card1);
         card2=findViewById(R.id.card2);
         card3=findViewById(R.id.card3);
         card4=findViewById(R.id.card4);
         drawerLayout=findViewById(R.id.drawer_layout);
-        stories=findViewById(R.id.stories);
-        sleep=findViewById(R.id.imageView5);
-        water=findViewById(R.id.imageView3);
-        sleeptv=findViewById(R.id.textView5);
-        watertv=findViewById(R.id.textView6);
+        stories=findViewById(R.id.tvblog);
+        sleep=findViewById(R.id.sleep);
+        water=findViewById(R.id.water);
+        sleeptv=findViewById(R.id.sleeptv);
+        watertv=findViewById(R.id.watertv);
+
+        blogcard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent blogintent= new Intent(MainActivity.this,FeedActivity.class);
+                startActivity(blogintent);
+            }
+        });
+
+
+
 
 
 
@@ -156,7 +170,7 @@ public class MainActivity extends AppCompatActivity implements SleepDialog.Sleep
         });
 
 
-        header.setBackgroundResource(R.drawable.cardviewbg1);
+
 
 
     }
