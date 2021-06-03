@@ -32,7 +32,7 @@ import java.time.LocalDate;
 
 public class MainActivity extends AppCompatActivity implements SleepDialog.SleepDialogListener {
 
-    CardView header,blogcard,card1,card2,card3,card4;
+    CardView header,blogcard,card1,card2,card3,card4,mapcard;
     DrawerLayout drawerLayout;
     Toolbar mainToolBar;
     TextView stories;
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity implements SleepDialog.Sleep
 
         header=findViewById(R.id.headercard);
         blogcard=findViewById(R.id.blogcard);
-
+        mapcard=findViewById(R.id.mapcard);
         card1=findViewById(R.id.card1);
         card2=findViewById(R.id.card2);
         card3=findViewById(R.id.card3);
@@ -62,6 +62,14 @@ public class MainActivity extends AppCompatActivity implements SleepDialog.Sleep
         water=findViewById(R.id.water);
         sleeptv=findViewById(R.id.sleeptv);
         watertv=findViewById(R.id.watertv);
+
+        mapcard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent mapint= new Intent(MainActivity.this,MapActivity.class);
+                startActivity(mapint);
+            }
+        });
 
         blogcard.setOnClickListener(new View.OnClickListener() {
             @Override

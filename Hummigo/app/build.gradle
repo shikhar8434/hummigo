@@ -107,6 +107,13 @@ dependencies {
     implementation 'androidx.navigation:navigation-ui:2.3.1'
     implementation "androidx.drawerlayout:drawerlayout:1.1.1"
 
+    //mapbox sdk
+    implementation 'com.mapbox.mapboxsdk:mapbox-android-sdk:9.6.1'
+    implementation 'com.mapbox.mapboxsdk:mapbox-android-plugin-locationlayer:0.11.0'
+    
+    implementation 'com.mapbox.mapboxsdk:mapbox-android-plugin-places-v9:0.12.0'
+    implementation 'com.mapbox.mapboxsdk:mapbox-android-telemetry:5.0.0'
+    implementation 'androidx.coordinatorlayout:coordinatorlayout:1.1.0'
 }
 configurations {
     // Resolves dependency conflict caused by some dependencies use

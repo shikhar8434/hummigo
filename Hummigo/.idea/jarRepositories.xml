@@ -26,5 +26,15 @@
       <option name="name" value="maven" />
       <option name="url" value="https://androidx.dev/snapshots/builds/6787662/artifacts/repository/" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven" />
+      <option name="name" value="maven" />
+      <option name="url" value="https://api.mapbox.com/downloads/v2/releases/maven" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="MavenRepo" />
+      <option name="name" value="MavenRepo" />
+      <option name="url" value="https://repo.maven.apache.org/maven2/" />
+    </remote-repository>
   </component>
 </project>

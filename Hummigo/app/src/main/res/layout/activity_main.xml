@@ -23,6 +23,7 @@
                 android:layout_height="match_parent"
                 android:background="#f9f3f3"
 
+
                 tools:context=".MainActivity">
 
 
@@ -30,6 +31,7 @@
                     android:id="@+id/linearLayout2"
                     android:layout_width="match_parent"
                     android:layout_height="240dp"
+
                     android:background="@drawable/mygrad"
                     android:orientation="vertical"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -205,6 +207,7 @@
                     android:layout_marginTop="48dp"
                     android:elevation="12dp"
                     app:cardCornerRadius="12dp"
+                   
                     app:layout_constraintEnd_toStartOf="@+id/card2"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
@@ -453,7 +456,7 @@
                         </androidx.cardview.widget.CardView>
 
                         <androidx.cardview.widget.CardView
-                            android:id="@+id/cardView7"
+                            android:id="@+id/mapcard"
                             android:layout_width="120dp"
                             android:layout_height="32dp"
                             android:layout_margin="16sp"

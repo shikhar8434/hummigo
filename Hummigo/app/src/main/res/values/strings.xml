@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Hummigo</string>
 
+    <string name="mapbox_access_token">pk.eyJ1Ijoic2hpeHgyMzYiLCJhIjoiY2twOXk0N2hrMGtuaTJ3dDdqZHFoZW5nciJ9.a2GjlzH0nTmxySKTCiZWTQ</string>
+
     <string name="ok">OK</string>
     <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
     <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
