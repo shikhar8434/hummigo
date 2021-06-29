@@ -118,9 +118,13 @@ public class DailyGoals extends AppCompatActivity {
         myRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if(snapshot.child("water_score").exists()){
                 String watr_drink= snapshot.child("water_score").getValue().toString();
                 watr_drink+=" mL";
-                tvwatscore.setText(watr_drink);
+                tvwatscore.setText(watr_drink);}
+                else {
+                    Toast.makeText(DailyGoals.this, "add water data", Toast.LENGTH_SHORT).show();
+                }
             }
 
             @Override
@@ -129,13 +133,17 @@ public class DailyGoals extends AppCompatActivity {
 
             }
         });
-        myRef2= FirebaseDatabase.getInstance().getReference("Users").child(uid).child("goals").child("calories");
+        myRef2= FirebaseDatabase.getInstance().getReference("Users").child(uid).child("goals");
         myRef2.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                String totalcalstr=snapshot.child("totalcalorie").getValue().toString();
+                if(snapshot.child("calories").exists()){
+                String totalcalstr=snapshot.child("calories").child("totalcalorie").getValue().toString();
                 totalcalstr+=" kcal";
-                tvcal.setText(totalcalstr);
+                tvcal.setText(totalcalstr);}
+                else {
+                    Toast.makeText(DailyGoals.this, "add calories data", Toast.LENGTH_SHORT).show();
+                }
 
             }
 
@@ -145,13 +153,17 @@ public class DailyGoals extends AppCompatActivity {
 
             }
         });
-        myRef3= FirebaseDatabase.getInstance().getReference("Users").child(uid).child("goals").child("steps");
+        myRef3= FirebaseDatabase.getInstance().getReference("Users").child(uid).child("goals");
         myRef3.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                String totalstepstr=snapshot.child("stepcount").getValue().toString();
+                if(snapshot.child("steps").exists()){
+                String totalstepstr=snapshot.child("steps").child("stepcount").getValue().toString();
                 totalstepstr+=" steps";
-                tvsteps.setText(totalstepstr);
+                tvsteps.setText(totalstepstr);}
+                else {
+                    Toast.makeText(DailyGoals.this, "add steps data ", Toast.LENGTH_SHORT).show();
+                }
 
             }
 

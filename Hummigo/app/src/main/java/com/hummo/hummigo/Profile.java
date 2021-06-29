@@ -37,7 +37,7 @@ public class Profile extends AppCompatActivity {
     private DatabaseReference myRef2=database.getReference();
     private DatabaseReference myRef3=database.getReference();
     private FirebaseAuth mAuth;
-    TextView tvprofcal,tvprofwat,tvprofstep;
+    TextView tvprofcal,tvprofwat,tvprofstep,setg;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +47,14 @@ public class Profile extends AppCompatActivity {
         tvprofcal=findViewById(R.id.tvcalprof);
         tvprofstep=findViewById(R.id.tvstepprof);
         tvprofwat=findViewById(R.id.tvwatprof);
+        setg=findViewById(R.id.setgoals);
+        setg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent setint= new Intent(Profile.this,DailyGoals.class);
+                startActivity(setint);
+            }
+        });
 
         GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(getApplicationContext());
         if (acct != null) {
@@ -96,9 +104,13 @@ public class Profile extends AppCompatActivity {
         myRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if(snapshot.child("goals").exists()){
                 String watr_drink= snapshot.child("water_score").getValue().toString();
                 watr_drink+=" mL";
-                tvprofwat.setText(watr_drink);
+                tvprofwat.setText(watr_drink);}
+                else {
+                    Toast.makeText(Profile.this, "Please set your daily goals", Toast.LENGTH_SHORT).show();
+                }
             }
 
             @Override
@@ -107,13 +119,17 @@ public class Profile extends AppCompatActivity {
 
             }
         });
-        myRef2= FirebaseDatabase.getInstance().getReference("Users").child(uid).child("goals").child("calories");
+        myRef2= FirebaseDatabase.getInstance().getReference("Users").child(uid).child("goals");
         myRef2.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                String totalcalstr=snapshot.child("totalcalorie").getValue().toString();
-                totalcalstr+=" kcal";
-                tvprofcal.setText(totalcalstr);
+                if (snapshot.child("calories").exists()) {
+                    String totalcalstr = snapshot.child("calories").child("totalcalorie").getValue().toString();
+                    totalcalstr += " kcal";
+                    tvprofcal.setText(totalcalstr);
+                }else {
+                    Toast.makeText(Profile.this, "Please set your daily goals", Toast.LENGTH_SHORT).show();
+                }
 
             }
 
@@ -123,13 +139,17 @@ public class Profile extends AppCompatActivity {
 
             }
         });
-        myRef3= FirebaseDatabase.getInstance().getReference("Users").child(uid).child("goals").child("steps");
+        myRef3= FirebaseDatabase.getInstance().getReference("Users").child(uid).child("goals");
         myRef3.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                String totalstepstr=snapshot.child("stepcount").getValue().toString();
-                totalstepstr+=" steps";
-                tvprofstep.setText(totalstepstr);
+                if(snapshot.child("steps").exists()) {
+                    String totalstepstr = snapshot.child("steps").child("stepcount").getValue().toString();
+                    totalstepstr += " steps";
+                    tvprofstep.setText(totalstepstr);
+                }else {
+                    Toast.makeText(Profile.this, "Please set daily goals", Toast.LENGTH_SHORT).show();
+                }
 
             }
 
