@@ -5,7 +5,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import androidx.annotation.Nullable;
 
-import com.hummo.hummigo.ExcerciseActivity;
+import com.hummo.hummigo.MainActivity;
 
 /** Graphic instance for rendering inference info (latency, FPS, resolution) in an overlay view. */
 public class InferenceInfoGraphic extends GraphicOverlay.Graphic {
@@ -20,7 +20,7 @@ public class InferenceInfoGraphic extends GraphicOverlay.Graphic {
     public double angle2 = PoseGraphic.getMyAngle();
     private int angletoint= (int) angle2;
     public String angledouble;
-    public static int cardtap= ExcerciseActivity.tap;
+    public static int cardtap= MainActivity.tap;
 
 
 

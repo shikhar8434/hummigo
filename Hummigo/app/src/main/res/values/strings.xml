@@ -3,6 +3,9 @@
 
     <string name="mapbox_access_token">pk.eyJ1Ijoic2hpeHgyMzYiLCJhIjoiY2twOXk0N2hrMGtuaTJ3dDdqZHFoZW5nciJ9.a2GjlzH0nTmxySKTCiZWTQ</string>
 
+    <string name="steps_tracked">Steps Tracked: 0</string>
+    <string name="android_steps_tracked">Android Steps Tracked: 0</string>
+
     <string name="ok">OK</string>
     <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
     <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
@@ -118,4 +121,6 @@
     <string name="pref_key_pose_detector_visualize_z" translatable="false">pdvz</string>
     <string name="pref_title_pose_detector_rescale_z">Rescale z value for visualization</string>
     <string name="pref_key_pose_detector_rescale_z" translatable="false">pdrz</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

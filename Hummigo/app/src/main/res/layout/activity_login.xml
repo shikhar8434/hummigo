@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
         android:background="@drawable/myroundbtn"
-        android:drawableEnd="@drawable/googlesmallicon"
+        android:drawableStart="@drawable/googlesmallicon"
         android:fontFamily="@font/rubikbold"
         android:padding="12dp"
         android:text="Sign In with Google"

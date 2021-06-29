@@ -130,6 +130,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 import timber.log.Timber;
 
+import static com.mapbox.core.constants.Constants.PRECISION_6;
 import static com.mapbox.mapboxsdk.style.layers.PropertyFactory.iconImage;
 import static com.mapbox.mapboxsdk.style.layers.PropertyFactory.iconOffset;
 import static com.mapbox.mapboxsdk.style.layers.PropertyFactory.lineCap;
@@ -153,6 +154,7 @@ import com.mapbox.mapboxsdk.plugins.places.autocomplete.model.PlaceOptions;
 import com.mapbox.mapboxsdk.style.layers.SymbolLayer;
 import com.mapbox.mapboxsdk.style.sources.GeoJsonSource;
 import com.google.gson.JsonObject;
+
 
 import static com.mapbox.mapboxsdk.style.layers.PropertyFactory.iconImage;
 import static com.mapbox.mapboxsdk.style.layers.PropertyFactory.iconOffset;
@@ -185,6 +187,10 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
     String startLocation="";
     String endLocation="";
     CardView btmcard;
+    private Button navigate;
+
+    private DirectionsRoute currentRoute;
+    private static final String TAG= "MapActivity";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -199,7 +205,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
 
         btmcard=findViewById(R.id.btmcard);
         btmcard.setBackgroundResource(R.drawable.cardviewbg1);
-
+        
         getSupportActionBar().hide();
 
 
@@ -403,17 +409,61 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         loadedMapStyle.addSource(iconGeoJsonSource);
     }
 
-    private void getRoute(final MapboxMap mapboxMap, Point origin, final Point destination) {
+    private void getRoute(MapboxMap mapboxMap, Point origin, Point destination) {
         client = MapboxDirections.builder()
                 .origin(origin)
                 .destination(destination)
                 .overview(DirectionsCriteria.OVERVIEW_FULL)
                 .profile(DirectionsCriteria.PROFILE_DRIVING)
-                .accessToken("pk.eyJ1IjoiemFoaWQxNiIsImEiOiJja2UxZ3lpaGE0NHFuMnJtcXc5djcxeGVtIn0.V5lnAKqektnfC1pARBQYUQ")
+                .accessToken(getString(R.string.mapbox_access_token))
                 .build();
 
-        client.enqueueCall(this);
+        client.enqueueCall(new Callback<DirectionsResponse>() {
+            @Override
+            public void onResponse(Call<DirectionsResponse> call, Response<DirectionsResponse> response) {
+// You can get the generic HTTP info about the response
+                Timber.d("Response code: " + response.code());
+                if (response.body() == null) {
+                    Timber.e("No routes found, make sure you set the right user and access token.");
+                    return;
+                } else if (response.body().routes().size() < 1) {
+                    Timber.e("No routes found");
+                    return;
+                }
+
+// Get the directions route
+                currentRoute = response.body().routes().get(0);
+
+// Make a toast which displays the route's distance
+
+
+                if (mapboxMap != null) {
+                    mapboxMap.getStyle(new Style.OnStyleLoaded() {
+                        @Override
+                        public void onStyleLoaded(@NonNull Style style) {
+
+// Retrieve and update the source designated for showing the directions route
+                            GeoJsonSource source = style.getSourceAs(ROUTE_SOURCE_ID);
+
+// Create a LineString with the directions route's geometry and
+// reset the GeoJSON source for the route LineLayer source
+                            if (source != null) {
+                                source.setGeoJson(LineString.fromPolyline(currentRoute.geometry(), PRECISION_6));
+                            }
+                        }
+                    });
+                }
+            }
+
+            @Override
+            public void onFailure(Call<DirectionsResponse> call, Throwable throwable) {
+                Timber.e("Error: " + throwable.getMessage());
+                Toast.makeText(com.hummo.hummigo.MapActivity.this, "Error: " + throwable.getMessage(),
+                        Toast.LENGTH_SHORT).show();
+            }
+        });
     }
+
 
 
     public void onResponse(Call<DirectionsResponse> call, Response<DirectionsResponse> response) {

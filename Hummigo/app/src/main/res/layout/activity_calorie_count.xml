@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalorieCount">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ProgressBar
+                android:id="@+id/cprogress_bar2"
+                style="@style/CircularDeterminateProgressBar"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:indeterminateOnly="false"
+                android:progress="60"
+                android:progressDrawable="@drawable/carb_bar"
+                android:rotation="-90"
+                app:layout_constraintBottom_toBottomOf="@+id/cprogress_bar1"
+                app:layout_constraintEnd_toEndOf="@+id/cprogress_bar1"
+                app:layout_constraintStart_toStartOf="@+id/cprogress_bar1"
+                app:layout_constraintTop_toTopOf="@+id/cprogress_bar1"
+                tools:progress="60" />
+
+            <ProgressBar
+                android:id="@+id/cprogress_bar1"
+                style="@style/CircularDeterminateProgressBar"
+                android:layout_width="320dp"
+                android:layout_height="320dp"
+                android:indeterminateOnly="false"
+                android:progress="60"
+                android:progressDrawable="@drawable/prot_bar"
+                android:rotation="-90"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.374"
+                tools:progress="60" />
+
+            <ProgressBar
+                android:id="@+id/cprogress_bar3"
+                style="@style/CircularDeterminateProgressBar"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:indeterminateOnly="false"
+                android:progress="60"
+                android:progressDrawable="@drawable/fat_bar"
+                android:rotation="-90"
+                app:layout_constraintBottom_toBottomOf="@+id/cprogress_bar2"
+                app:layout_constraintEnd_toEndOf="@+id/cprogress_bar2"
+                app:layout_constraintStart_toStartOf="@+id/cprogress_bar2"
+                app:layout_constraintTop_toTopOf="@+id/cprogress_bar2"
+                tools:progress="60" />
+
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="76dp"
+                android:fontFamily="@font/rubikbold"
+                android:text="Today's calorie Intake"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               app:layout_constraintTop_toBottomOf="@+id/textView16"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               android:gravity="center"
+               app:layout_constraintBottom_toTopOf="@+id/cprogress_bar1">
+               <TextView
+                   android:id="@+id/prottv"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text=""
+                   android:layout_margin="16sp"
+
+                   android:textColor="@android:color/holo_green_dark"
+                   android:textSize="16dp"
+                   android:fontFamily="@font/rubikmedium"
+                   tools:layout_editor_absoluteX="182dp"
+                   tools:layout_editor_absoluteY="154dp" />
+               <TextView
+                   android:id="@+id/carbtv"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text=""
+                   android:layout_margin="16sp"
+                   android:fontFamily="@font/rubikmedium"
+                   android:textColor="@android:color/holo_orange_dark"
+                   android:textSize="16dp"
+                   tools:layout_editor_absoluteX="182dp"
+                   tools:layout_editor_absoluteY="154dp" />
+               <TextView
+                   android:id="@+id/fattv"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text=""
+                   android:layout_margin="16sp"
+                   android:textColor="@android:color/holo_blue_dark"
+                   android:textSize="16dp"
+                   android:fontFamily="@font/rubikmedium"
+                   tools:layout_editor_absoluteX="182dp"
+                   tools:layout_editor_absoluteY="154dp" />
+           </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:layout_margin="24sp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toTopOf="@+id/calsavebtn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cprogress_bar1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="16sp"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_prot"
+                        android:layout_width="24sp"
+                        android:layout_height="24sp"
+
+                        app:cardBackgroundColor="#09af00"
+                        tools:layout_editor_absoluteX="88dp"
+                        tools:layout_editor_absoluteY="544dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_baseline_add_24" />
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:text="Protein" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="16sp"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_carb"
+                        android:layout_width="24sp"
+                        android:layout_height="24sp"
+                        app:cardBackgroundColor="#ee6002"
+                        tools:layout_editor_absoluteX="88dp"
+                        tools:layout_editor_absoluteY="623dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_baseline_add_24" />
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+
+
+                        android:text="Carbohydrates" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="16sp"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_fat"
+                        android:layout_width="24sp"
+                        android:layout_height="24sp"
+
+                        app:cardBackgroundColor="#1c00db"
+                        tools:layout_editor_absoluteX="80dp"
+                        tools:layout_editor_absoluteY="687dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_baseline_add_24" />
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:text="Fat" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/calsavebtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="24sp"
+                android:backgroundTint="@android:color/holo_orange_dark"
+                android:fontFamily="@font/rubikbold"
+                android:text="Save Changes"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

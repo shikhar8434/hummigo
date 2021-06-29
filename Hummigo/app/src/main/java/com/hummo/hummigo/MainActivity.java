@@ -32,7 +32,7 @@ import java.time.LocalDate;
 
 public class MainActivity extends AppCompatActivity implements SleepDialog.SleepDialogListener {
 
-    CardView header,blogcard,card1,card2,card3,card4,mapcard;
+    CardView header,goalcard,card1,card2,card3,card4,mapcard;
     DrawerLayout drawerLayout;
     Toolbar mainToolBar;
     TextView stories;
@@ -43,6 +43,8 @@ public class MainActivity extends AppCompatActivity implements SleepDialog.Sleep
 
     NavigationView navigationView;
 
+    public static int tap;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,18 +52,25 @@ public class MainActivity extends AppCompatActivity implements SleepDialog.Sleep
         setContentView(R.layout.activity_main);
 
         header=findViewById(R.id.headercard);
-        blogcard=findViewById(R.id.blogcard);
+        goalcard=findViewById(R.id.goalcard);
         mapcard=findViewById(R.id.mapcard);
         card1=findViewById(R.id.card1);
         card2=findViewById(R.id.card2);
         card3=findViewById(R.id.card3);
-        card4=findViewById(R.id.card4);
+
         drawerLayout=findViewById(R.id.drawer_layout);
-        stories=findViewById(R.id.tvblog);
+
         sleep=findViewById(R.id.sleep);
         water=findViewById(R.id.water);
         sleeptv=findViewById(R.id.sleeptv);
         watertv=findViewById(R.id.watertv);
+
+        ImageView image1 = findViewById(R.id.imex1);
+        ImageView image2 = findViewById(R.id.imex2);
+        ImageView image3 = findViewById(R.id.imex3);
+        ImageView image4 = findViewById(R.id.imex4);
+        ImageView image5= findViewById(R.id.imex5);
+        ImageView image6=findViewById(R.id.imex6);
 
         mapcard.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,10 +80,10 @@ public class MainActivity extends AppCompatActivity implements SleepDialog.Sleep
             }
         });
 
-        blogcard.setOnClickListener(new View.OnClickListener() {
+        goalcard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent blogintent= new Intent(MainActivity.this,FeedActivity.class);
+                Intent blogintent= new Intent(MainActivity.this,DailyGoals.class);
                 startActivity(blogintent);
             }
         });
@@ -98,13 +107,6 @@ public class MainActivity extends AppCompatActivity implements SleepDialog.Sleep
             }
         });
 
-        stories.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent= new Intent(MainActivity.this,FeedActivity.class);
-                startActivity(intent);
-            }
-        });
 
         ActionBar actionBar;
         actionBar = getSupportActionBar();
@@ -169,13 +171,60 @@ public class MainActivity extends AppCompatActivity implements SleepDialog.Sleep
                 startActivity(intent);
             }
         });
-        card4.setOnClickListener(new View.OnClickListener() {
+
+
+        image1.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Intent intent= new Intent(MainActivity.this,ExcerciseActivity.class);
+            public void onClick(View v) {
+                tap=1;
+                Intent intent= new Intent(MainActivity.this,CameraXLivePreviewActivity.class);
                 startActivity(intent);
             }
         });
+        image2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                tap=2;
+                Intent intent2= new Intent(MainActivity.this,CameraXLivePreviewActivity.class);
+                startActivity(intent2);
+            }
+        });
+        image3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                tap=3;
+                Intent intent3= new Intent(MainActivity.this,CameraXLivePreviewActivity.class);
+                startActivity(intent3);
+            }
+        });
+        image4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                tap=4;
+                Intent intent4= new Intent(MainActivity.this,CameraXLivePreviewActivity.class);
+                startActivity(intent4);
+            }
+        });
+
+        image5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                tap=5;
+                Intent intent5= new Intent(MainActivity.this,CameraXLivePreviewActivity.class);
+                startActivity(intent5);
+
+            }
+        });
+        image6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                tap=6;
+                Intent intent6= new Intent(MainActivity.this,CameraXLivePreviewActivity.class);
+                startActivity(intent6);
+
+            }
+        });
+
 
 
 

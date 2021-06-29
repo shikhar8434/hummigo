@@ -4,21 +4,18 @@ import static java.lang.Math.atan2;
 import static java.lang.Math.max;
 import static java.lang.Math.min;
 
-import android.content.Intent;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.PointF;
 import com.google.common.primitives.Ints;
 import com.google.mlkit.vision.common.PointF3D;
-import com.hummo.hummigo.ExcerciseActivity;
-import com.hummo.hummigo.excercise.GraphicOverlay;
+import com.hummo.hummigo.MainActivity;
 import com.hummo.hummigo.excercise.GraphicOverlay.Graphic;
 import com.google.mlkit.vision.pose.Pose;
 import com.google.mlkit.vision.pose.PoseLandmark;
 import java.util.List;
 import java.util.Locale;
-import java.util.Objects;
 
 /** Draw the detected pose in preview. */
 public class PoseGraphic extends Graphic {
@@ -45,7 +42,7 @@ public class PoseGraphic extends Graphic {
     public static double rightKneeAngle;
     public static double rightLegAngle;
     public static double leftLegAngle;
-    public static int cardtap= ExcerciseActivity.tap;
+    public static int cardtap= MainActivity.tap;
 
 
     PoseGraphic(

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#32325d"
+    tools:context=".SleepActivity">
+
+    <ProgressBar
+        android:id="@+id/sleepprogress1"
+        style="@style/CircularDeterminateProgressBar"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="64dp"
+        android:indeterminateOnly="false"
+        android:progress="60"
+        android:progressDrawable="@drawable/sleepprog"
+        android:rotation="-90"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView26"
+        tools:progress="60" />
+
+    <ProgressBar
+        android:id="@+id/sleepprogress2"
+        style="@style/CircularDeterminateProgressBar"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="64dp"
+        android:indeterminateOnly="false"
+        android:progress="60"
+        android:progressDrawable="@drawable/sleepprogress2"
+        android:rotation="-90"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toEndOf="@+id/sleepprogress1"
+        app:layout_constraintTop_toBottomOf="@+id/textView26"
+        tools:progress="60" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:fontFamily="@font/rubikbold"
+        android:text="Track your Sleep"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="40%"
+        android:textColor="@color/white"
+        android:fontFamily="@font/rubikmedium"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/sleepprogress1"
+        app:layout_constraintEnd_toEndOf="@+id/sleepprogress1"
+        app:layout_constraintStart_toStartOf="@+id/sleepprogress1"
+        app:layout_constraintTop_toTopOf="@+id/sleepprogress1" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="80%"
+        android:textSize="18dp"
+        android:fontFamily="@font/rubikmedium"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/sleepprogress2"
+        app:layout_constraintEnd_toEndOf="@+id/sleepprogress2"
+        app:layout_constraintStart_toStartOf="@+id/sleepprogress2"
+        app:layout_constraintTop_toTopOf="@+id/sleepprogress2" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="24dp"
+        android:text="Today"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:fontFamily="@font/rubikmedium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sleepprogress1" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="This week"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/rubikmedium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.557"
+        app:layout_constraintStart_toEndOf="@+id/textView29"
+        app:layout_constraintTop_toBottomOf="@+id/sleepprogress2" />
+
+    <TimePicker
+        android:id="@+id/simpleTimePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/white"
+        android:timePickerMode="spinner"
+        android:foregroundTint="@color/white"
+        android:theme="@style/MyBase.TimePicker"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24sp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#b97bfc"
+        android:text="Set Sleep Time"
+        android:textSize="18dp"
+        android:fontFamily="@font/rubikbold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/simpleTimePicker" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
