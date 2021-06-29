@@ -1,7 +1,10 @@
 package com.hummo.hummigo;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -26,6 +29,7 @@ public class WaterTrack extends AppCompatActivity {
     private Button watrsavebtn;
     ProgressBar progressBar;
     TextView textView,waterml;
+    ImageView watback;
 
     private FirebaseDatabase db= FirebaseDatabase.getInstance();
     private DatabaseReference root;
@@ -48,6 +52,14 @@ public class WaterTrack extends AppCompatActivity {
         textView = (TextView) findViewById(R.id.text_view_progress);
         waterml=findViewById(R.id.waterml);
         watrsavebtn=findViewById(R.id.watr_save_btn);
+        watback=findViewById(R.id.watback);
+        watback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent stepbackint= new Intent(WaterTrack.this,DailyGoals.class);
+                startActivity(stepbackint);
+            }
+        });
 
         // when clicked on buttonIncrement progress in increased by 10%
         buttonIncrement.setOnClickListener(new View.OnClickListener() {

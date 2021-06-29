@@ -16,6 +16,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -43,6 +44,7 @@ public class StepsCount extends AppCompatActivity {
     private FirebaseDatabase db= FirebaseDatabase.getInstance();
     private DatabaseReference root;
     private FirebaseAuth mAuth;
+    ImageView imbackstep;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +53,15 @@ public class StepsCount extends AppCompatActivity {
         stepsprogress=findViewById(R.id.step_progress);
         stepsave=findViewById(R.id.stepsave);
         getSupportActionBar().hide();
+
+        imbackstep=findViewById(R.id.imbackstep);
+        imbackstep.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent stepbackint= new Intent(StepsCount.this,DailyGoals.class);
+                startActivity(stepbackint);
+            }
+        });
 
 
         stepCounter = (int) DebugActivity.mStepCounter;

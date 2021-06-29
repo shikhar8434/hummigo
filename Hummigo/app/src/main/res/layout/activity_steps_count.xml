@@ -56,7 +56,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="16sp"
             android:fontFamily="@font/rubikmedium"
-            android:text="52"
+            android:text=""
+
             android:textColor="@android:color/holo_orange_dark"
             android:textSize="16dp"
             tools:layout_editor_absoluteX="182dp"
@@ -68,7 +69,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="16sp"
             android:fontFamily="@font/rubikmedium"
-            android:text="5/500"
+            android:text=""
             android:textColor="@android:color/holo_blue_dark"
             android:textSize="16dp"
             tools:layout_editor_absoluteX="182dp"
@@ -103,5 +104,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/step_progress"
         app:srcCompat="@drawable/foot" />
+
+    <ImageView
+        android:id="@+id/imbackstep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/l1"
+        app:layout_constraintEnd_toStartOf="@+id/tvheadsteps"
+        app:layout_constraintHorizontal_bias="0.304"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8"
+        android:backgroundTint="@color/black"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

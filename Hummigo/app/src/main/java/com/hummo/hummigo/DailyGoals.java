@@ -145,13 +145,14 @@ public class DailyGoals extends AppCompatActivity {
 
             }
         });
-        myRef3=FirebaseDatabase.getInstance().getReference("Users").child(uid).child("goals").child("steps");
+        myRef3= FirebaseDatabase.getInstance().getReference("Users").child(uid).child("goals").child("steps");
         myRef3.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                String totalstepstr= snapshot.child("stepcount").getValue().toString();
+                String totalstepstr=snapshot.child("stepcount").getValue().toString();
                 totalstepstr+=" steps";
                 tvsteps.setText(totalstepstr);
+
             }
 
             @Override

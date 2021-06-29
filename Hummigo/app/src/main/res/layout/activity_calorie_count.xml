@@ -76,49 +76,53 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-           <LinearLayout
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               app:layout_constraintTop_toBottomOf="@+id/textView16"
-               app:layout_constraintStart_toStartOf="parent"
-               app:layout_constraintEnd_toEndOf="parent"
-               android:gravity="center"
-               app:layout_constraintBottom_toTopOf="@+id/cprogress_bar1">
-               <TextView
-                   android:id="@+id/prottv"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text=""
-                   android:layout_margin="16sp"
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:layout_constraintBottom_toTopOf="@+id/cprogress_bar1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView16">
 
-                   android:textColor="@android:color/holo_green_dark"
-                   android:textSize="16dp"
-                   android:fontFamily="@font/rubikmedium"
-                   tools:layout_editor_absoluteX="182dp"
-                   tools:layout_editor_absoluteY="154dp" />
-               <TextView
-                   android:id="@+id/carbtv"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text=""
-                   android:layout_margin="16sp"
-                   android:fontFamily="@font/rubikmedium"
-                   android:textColor="@android:color/holo_orange_dark"
-                   android:textSize="16dp"
-                   tools:layout_editor_absoluteX="182dp"
-                   tools:layout_editor_absoluteY="154dp" />
-               <TextView
-                   android:id="@+id/fattv"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text=""
-                   android:layout_margin="16sp"
-                   android:textColor="@android:color/holo_blue_dark"
-                   android:textSize="16dp"
-                   android:fontFamily="@font/rubikmedium"
-                   tools:layout_editor_absoluteX="182dp"
-                   tools:layout_editor_absoluteY="154dp" />
-           </LinearLayout>
+                <TextView
+                    android:id="@+id/prottv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16sp"
+                    android:fontFamily="@font/rubikmedium"
+
+                    android:text=""
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textSize="16dp"
+                    tools:layout_editor_absoluteX="182dp"
+                    tools:layout_editor_absoluteY="154dp" />
+
+                <TextView
+                    android:id="@+id/carbtv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16sp"
+                    android:fontFamily="@font/rubikmedium"
+                    android:text=""
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:textSize="16dp"
+                    tools:layout_editor_absoluteX="182dp"
+                    tools:layout_editor_absoluteY="154dp" />
+
+                <TextView
+                    android:id="@+id/fattv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16sp"
+                    android:fontFamily="@font/rubikmedium"
+                    android:text=""
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="16dp"
+                    tools:layout_editor_absoluteX="182dp"
+                    tools:layout_editor_absoluteY="154dp" />
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -246,6 +250,18 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/calback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+                app:layout_constraintEnd_toStartOf="@+id/textView16"
+                app:layout_constraintHorizontal_bias="0.324"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.703"
+                app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

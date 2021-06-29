@@ -4,9 +4,11 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -30,6 +32,7 @@ public class CalorieCount extends AppCompatActivity {
     private FirebaseDatabase db= FirebaseDatabase.getInstance();
     private DatabaseReference root;
     private TextView tvcarb,tvprot,tvfat;
+    ImageView calback;
 
 
     private FirebaseAuth mAuth;
@@ -47,6 +50,14 @@ public class CalorieCount extends AppCompatActivity {
         tvcarb=findViewById(R.id.carbtv);
         tvprot=findViewById(R.id.prottv);
         tvfat=findViewById(R.id.fattv);
+        calback=findViewById(R.id.calback);
+        calback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent stepbackint= new Intent(CalorieCount.this,DailyGoals.class);
+                startActivity(stepbackint);
+            }
+        });
 
 
 
