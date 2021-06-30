@@ -65,6 +65,7 @@ The .apk file produced on building the project will require an Android device/em
   <li><b>Push Notifications : </b>To remind the users about daily routine activities that could improve their lifestyle</li>
   <div>
     <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/notifications.jpeg"  height=300/>
+    <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/hummigonot2.jpeg" height=300/>
   </div>
   <li><b>Daily Goals : </b>Helps users track their fitness routine and keep themselves engaged </li>
   <div>
