@@ -89,14 +89,17 @@ The .apk file produced on building the project will require an Android device/em
    <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/web1.png"  height=480 width=1296/>
 
   </div>
-  <h2>User Testing and Feedbacks<h2/>
-  <div>
+  <h2>User Testing and Feedbacks</h2>
+ <div>
   <p>Proper user testing and revamping of solution was of the utmost importance for a revolutionary healthcare app like hummigo . So we asked our potential
   user base to test our Solution , suggest improvements and also let us know the bugs or issues they face. After collecting over 250+ test results and 130+ 
   feedbacks , we modified our solution to ensure that it provides the best user experience and prooves to be the one stop solution for all healthcare needs.</p>
-    <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/web2.png"  height=480 width=1296/>
-    
+  
+   <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/web2.png"  height=480 width=1296/>
+
   </div>
+  
+  
   
   <h2>Links</h2>
   
