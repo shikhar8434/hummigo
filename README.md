@@ -75,6 +75,11 @@ The .apk file produced on building the project will require an Android device/em
     <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/dailygoals1.jpeg"  height=300/>
     <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/dailygoals5.jpeg" height=300/>
   </div>
+  <li><b>Nearby Services : </b>To help users connect with nearby healthcare services at affordable costs</li>
+  <div>
+    <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/photo_2021-06-30%2010.08.44.jpeg"  height=300/>
+    
+  </div>
 </ol>
 
 <h2>Architecture of App</h2>
