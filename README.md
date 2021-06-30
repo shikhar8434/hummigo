@@ -66,10 +66,11 @@ The .apk file produced on building the project will require an Android device/em
   <div>
     <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/notifications.jpeg"  height=300/>
   </div>
-  <li><b>Blogs : </b>Helps connecting people having similar problems and gives them a space to express themselves</li>
+  <li><b>Daily Goals : </b>Helps users track their fitness routine and keep themselves engaged </li>
   <div>
     <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/photo_2021-04-11%2019.00.44.jpeg"  height=300/>
-    <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/hummigowebview.jpeg"  height=300/>
+    <p>daily goals dashboard</p>
+    <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/dailygoals3.jpeg"  height=300/>
   </div>
 </ol>
 
