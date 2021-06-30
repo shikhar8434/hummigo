@@ -86,7 +86,8 @@ The .apk file produced on building the project will require an Android device/em
     hospitals, gyms, yoga classes etc. and also provides the best platform to read or write blogs and share personal stories of people suffering with
     chronic illness.</p>
   
-   <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/webapp%20ss.png"  height=480 width=1296/>
+   <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/web1.png"  height=480 width=1296/>
+  <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/web2.png"  height=480 width=1296/>
   </div>
   
   <h2>Links</h2>
