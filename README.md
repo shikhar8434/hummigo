@@ -1,7 +1,6 @@
 
-  <div>
-    <center><img src="https://user-images.githubusercontent.com/54185164/123970161-830f9f80-d9d6-11eb-9521-4597db17534a.png" height=640 width= 1260/></center>
-  </div>
+  ![resized](https://user-images.githubusercontent.com/54185164/123970161-830f9f80-d9d6-11eb-9521-4597db17534a.png)
+  
   <h1>Hummigo</h1>
   <h3>An app for making lives of people with chronic disorders and prolonged diseases easier.</h3>
   <p>
