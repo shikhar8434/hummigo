@@ -134,5 +134,5 @@ The .apk file produced on building the project will require an Android device/em
 
 <h2>About Us</h2>
 <p>Our team comprises of Shikhar Srivastava, an undergrad at NIT-J, specialising in android development.
-Abhineet Pandey, undergrad at IIITDM Jabalpur, who is proficient in the REACT framework.
+Abhineet Pandey, undergrad at IIITDM Jabalpur, who is a full stack developer proficient in the MERN Stack.
 Varenya Srivastava, undergrad at IIT-K, who incorporates ML/NLP models in our solution</p>
