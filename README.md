@@ -126,7 +126,13 @@ The .apk file produced on building the project will require an Android device/em
   <li>Firebase Realtime Database</li>
   <li>Firebase Cloud Messaging</li>
    <li>Mapbox SDK for nearby services</li>
+  <li>FRAKE model for keyword extraction</li>
 </ol>
   
 <h2>Our contribution in creating a healthier and happier society</h2>
 <p>We believe that regular monitoring of daily health and abiding strictly to medication and exercise discipline can greatly improve the conditions of people suffering from chronic disorders or prolonged dieases like diabetes, Parkinson's, High Blood Pressure. Easier monitoring and better anagement of daily health can prevent or at the very least, delay the progression of such diseases into their advanced stages. And therefore, we have come up with a one-stop solution for monitoring and better management of daily health. </p>
+
+<h2>About Us</h2>
+<p>Our team comprises of Shikhar Srivastava, an undergrad at NIT-J, specialising in android development.
+Abhineet Pandey, undergrad at IIITDM Jabalpur, who is proficient in the REACT framework.
+Varenya Srivastava, undergrad at IIT-K, who incorporates ML/NLP models in our solution</p>
