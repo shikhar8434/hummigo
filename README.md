@@ -69,6 +69,7 @@ The .apk file produced on building the project will require an Android device/em
   <li><b>Daily Goals : </b>Helps users track their fitness routine and keep themselves engaged </li>
   <div>
     <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/dailygoals3.jpeg"  height=300/>
+    <p>daily goals dashboard and <br>contribution heat map</p>
     <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/dailygoals2.jpeg"  height=300/>
     <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/dailygoals4.jpeg"  height=300/>
     <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/dailygoals1.jpeg"  height=300/>
