@@ -65,31 +65,47 @@ The .apk file produced on building the project will require an Android device/em
   <li><b>Push Notifications : </b>To remind the users about daily routine activities that could improve their lifestyle</li>
   <div>
     <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/notifications.jpeg"  height=300/>
+    <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/hummigonot2.jpeg" height=300/>
   </div>
-  <li><b>Blogs : </b>Helps connecting people having similar problems and gives them a space to express themselves</li>
+  <li><b>Daily Goals : </b>Helps users track their fitness routine and keep themselves engaged </li>
   <div>
-    <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/photo_2021-04-11%2019.00.44.jpeg"  height=300/>
-    <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/hummigowebview.jpeg"  height=300/>
+    <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/dailygoals3.jpeg"  height=300/>
+    <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/dailygoals2.jpeg"  height=300/>
+    <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/dailygoals4.jpeg"  height=300/>
+    <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/dailygoals1.jpeg"  height=300/>
+    <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/dailygoals5.jpeg" height=300/>
   </div>
 </ol>
 
 <h2>Architecture of App</h2>
   <div>
-    <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/architecture.png"  height=480 width=1296/>
+    <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/hummigoarchitecture.png"  height=480 width=1296/>
   </div>
  <h2>Hummigo Web App</h2>
  <div>
   <p>Hummigo webapp supplements the hummigo app and aims at making an impact on community by providing nearby services such as diagnostic services, 
     hospitals, gyms, yoga classes etc. and also provides the best platform to read or write blogs and share personal stories of people suffering with
-    chronic illness.</p>
+    chronic illness. The blogs and stories also get sorted as per user's interests and needs using our self made Natural Language Processing model.</p>
   
-   <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/webapp%20ss.png"  height=480 width=1296/>
+   <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/web1.png"  height=480 width=1296/>
+
   </div>
+  <h2>User Testing and Feedbacks</h2>
+ <div>
+  <p>Proper user testing and revamping of solution was of the utmost importance for a revolutionary healthcare app like hummigo . So we asked our potential
+  user base to test our Solution , suggest improvements and also let us know the bugs or issues they face. After collecting over 250+ test results and 130+ 
+  feedbacks , we modified our solution to ensure that it provides the best user experience and prooves to be the one stop solution for all healthcare needs.</p>
+  
+   <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/web2.png"  height=480 width=1296/>
+
+  </div>
+  
+  
   
   <h2>Links</h2>
   
-  [Github Repository of Hummigo webapp](https://github.com/abhineetpandey10/hummigoweb)<br>
-  [Website link](https://hummigo.herokuapp.com/Home)
+  [Github Repository of Hummigo webapp](https://github.com/abhineetpandey10/hummigo-web)<br>
+  [Website link](https://hummigo.herokuapp.com/)
 
   
 <h2>Technologies that have been used in this project</h2>
