@@ -13,7 +13,11 @@
 
 <p>We chose the "Good Health and Well-Being" United Nations Sustainable Development Goal to work upon.</p>
 <h2>Why Hummigo?</h2>
-    Despite advances in healthcare, 6 in 10 people continue to suffer from chronic illness. However such lifestyle diseases have their ultimate solution in the form of self help and routine management, and this is where our app, Hummigo, comes into picture. We developed “Hummigo”- an android app for self care and routine management.  
+   6 out of 10 people are suffering from Chronic Diseases. The same could have been prevented or controlled with some daily routine changes. As of today, we have around 10 doctors per 10,000 people on the planet. This is approximately 0.1% global coverage. Compare that with the worldwide internet reach, which stands at about 62% of today's global population. Lifestyle diseases stem from an imbalanced daily routine which personal routine improvements of an individual can effectively solve.
+
+Additionally, people can learn from those who have gone through the same fate before, thus highlighting the need to bring them together. The pandemic taught us that even finding a health service nearby can be a herculean task. A solution leveraging the widespread availability of the internet is almost demanding to happen.
+
+We believe that technological and medical advancements aim to improve the quality of human life by providing them with a physical, emotional, and mental support system. Even today, health concerns overshadow a significant part of financial prosperity in many developing developing countries. Surely, there is a technological vacancy waiting to be plugged in, and it was precisely this reason that motivated us to chose this specific goal. We try to bridge the gap between an ordinary person and their right to a healthier life.
 </p>
 
 
