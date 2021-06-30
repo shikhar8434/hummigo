@@ -84,11 +84,16 @@ The .apk file produced on building the project will require an Android device/em
  <div>
   <p>Hummigo webapp supplements the hummigo app and aims at making an impact on community by providing nearby services such as diagnostic services, 
     hospitals, gyms, yoga classes etc. and also provides the best platform to read or write blogs and share personal stories of people suffering with
-    chronic illness.</p>
+    chronic illness. The blogs and stories also get sorted as per user's interests and needs using our self made Natural Language Processing model.</p>
   
    <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/web1.png"  height=480 width=1296/>
-  <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/web2.png"  height=480 width=1296/>
+
   </div>
+  <h2>User Testing and Feedbacks</>
+  <p>Proper user testing and revamping of solution was of the utmost importance for a revolutionary healthcare app like hummigo . So we asked our potential
+  user base to test our Solution , suggest improvements and also let us know the bugs or issues they face. After collecting over 250+ test results and 130+ 
+  feedbacks , we modified our solution to ensure that it provides the best user experience and prooves to be the one stop solution for all healthcare needs.</p>
+    <img src="https://github.com/shikhar8434/hummigo/blob/main/screenshots/web2.png"  height=480 width=1296/>
   
   <h2>Links</h2>
   
