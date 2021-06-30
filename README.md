@@ -122,6 +122,7 @@ The .apk file produced on building the project will require an Android device/em
   <li>Google ML Kit's Text Recognition API</li>
   <li>Firebase Realtime Database</li>
   <li>Firebase Cloud Messaging</li>
+   <li>Mapbox SDK for nearby services</li>
 </ol>
   
 <h2>Our contribution in creating a healthier and happier society</h2>
