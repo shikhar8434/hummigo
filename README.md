@@ -2,6 +2,7 @@
   ![resized](https://user-images.githubusercontent.com/54185164/123970161-830f9f80-d9d6-11eb-9521-4597db17534a.png)
   
   <h1>Hummigo</h1>
+  <h2> Google DSC Solution Challenge 2021 Global Top 50 finalist</h2>
   <h3>An app for making lives of people with chronic disorders and prolonged diseases easier.</h3>
   <p>
     This project was created by us for the Google Developer Student Clubs Solution Challenge 2021. Google Developer Student Clubs Solution Challenge is an annual challenge hosted by Google developers, inviting college/university students from all over the world to learn & develop solutions for the given set of problems.</p>
